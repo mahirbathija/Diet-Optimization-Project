@@ -1,0 +1,1021 @@
+/* Objective function */
+min: +0.26 appleJuice +1.8 applePie +0.62 rawApple +0.79 cannedApricot +0.34 rawAsparagus +0.57 rawAvocado
+ +1.19 plainBagel +0.87 bambooShoots +0.38 rawBanana +0.5 liverBeef +1.3 steakBeef +1.23 driedBeef +1.2 gravyBeef
+ +1.75 lightBeer +1.85 regularBeer +1.17 cookedBeet +1.3 rawBlackberry +0.6 blackeyedPea +1.15 rawBlueberry
+ +0.35 crumbBread +0.56 rawBroccoli +0.65 brusselSprout +5.64 beefBurrito +0.32 butter +0.89 butterMilk
+ +0.52 bacon +0.26 cantaloupe +0.99 cola +1.2 dietCola +2.56 carrotCake +0.59 carrotJuice +0.35 rawCarrot
+ +0.38 cauliflower +0.48 celery +1.43 blueCheese +0.31 cheddarCheese +0.25 creamCheese +0.31 montereyJackCheese
+ +0.28 swissCheese +1.11 crackersCheese +0.5 goudaCheese +0.31 mozzarellaCheese +0.6 cherry +0.79 roastedChicken
+ +0.98 friedChicken +0.1 chilliPowder +0.75 cookiesChocolateChip +0.85 rawClam +0.39 brewedCoffee +0.35 instantCoffee
+ +0.49 coleSlaw +0.23 cornChips +0.56 C53 +2.63 cornDog +1.92 cottageCream +0.96 sourCream +1.49 croissant
+ +0.45 cucumber +0.78 bakedCustard +0.34 dandelionGreen +0.54 dates +0.94 roastedDuck +1.9 eggNog +0.84 eggNoodle
+ +0.5 cookedEggplant +2.89 enchilada +1.78 plainEnglishMuffin +1.56 englishWalnut +0.23 fishstick +0.15 beefAndPorkFrankfurter
+ +0.19 turkeyFrankfurter +0.13 frenchFriesFried +0.13 frenchFriesBaked +0.92 ginRumVodkaWhiskey +0.69 gingerBread
+ +0.11 grahamCracker +0.87 grapeDrink +0.43 grapeNutCereal +0.56 leanGroundBeef +0.51 regularGroundBeef
+ +0.78 hamLuncheon +0.67 honeyDew +0.77 vanillaIceCream +0.43 vanillaIceMilk +0.48 kefir +0.69 lambChops
+ +0.76 lambRoasted +0.45 lard +0.41 lemon +0.35 lettuce +0.87 limaBeans +0.2 cereal +0.43 macSalad +1.9 mango
+ +1.29 margarine +0.13 marshmallow +0.07 melbaToast +0.36 twoMilk +0.36 wholeMilk +0.35 mixedToast +0.83 blueMuffin
+ +0.82 mushroom +2.6 nectarine +0.42 cornOil +0.55 oliveOil +0.32 peanutOil +1.9 onion +0.53 orange +0.44 orangeJuice
+ +5.3 pacifcOyster +13.71 eastOyster +0.87 peachPie +0.79 peachJuice +1.44 peach +0.07 peanutButter +0.84 pear
+ +0.21 pea +0.05 pepper +0.37 pickle +1.11 pineNut +0.98 pineapple +0.66 pineappleJuice +0.95 pinto +1.12 plantain
+ +0.42 plum +0.05 popcorn +1.15 porkChop +0.75 porkRib +0.3 chip +0.81 mashedPotato +0.02 pretzel +1.54 pruneJuice
+ +0.6 pudding +0.27 raisinBread +1.59 raisin +0.2 rawWhite +0.2 eggYolk +1.85 rhubard +1.51 brownRice
+ +0.4 rootBeer +0.12 ryeWafer +0.23 ryeSliced +2.74 safflower +0.11 dressingBlue +0.08 dressingFrench
+ +0.05 dressingItalian +0.08 dressingThousand +0.09 dressingMayo +2.61 salmonBroiled +0.96 salmonCanned
+ +0.07 saltineCracker +0.6 skimMilk +0.36 chocolateSnackCake +0.54 soyBean +0.75 spaghetti +0.47 spinach
+ +1.41 strawberry +0.42 tea +0.55 tomato +3.6 trout +1.02 tuna +1.56 turkey +2.81 veal +0.86 vegeJuice
+ +0.47 chestnut +0.15 wheatBread +0.06 wheatCracker +1.17 whiteRice +0.25 yellowCake +2 lowYogurt +1.6 wholeYogurt;
+
+/* Constraints */
+Min Protein: +0.1 appleJuice +3 applePie +0.3 rawApple +0.9 cannedApricot +2.3 rawAsparagus +4 rawAvocado +7.5 plainBagel
+ +2.3 bambooShoots +1.2 rawBanana +23 liverBeef +23 steakBeef +24 driedBeef +8.7 gravyBeef +0.7 lightBeer
+ +0.9 regularBeer +0.9 cookedBeet +rawBlackberry +14.4 blackeyedPea +rawBlueberry +13 crumbBread +5.3 rawBroccoli
+ +6 brusselSprout +21 beefBurrito +butter +8.1 butterMilk +11.3 bacon +2.4 cantaloupe +0.2 dietCola +4.2 carrotCake
+ +1.7 carrotJuice +0.7 rawCarrot +1.2 cauliflower +0.3 celery +6.1 blueCheese +7.1 cheddarCheese +2.1 creamCheese
+ +6.9 montereyJackCheese +8 swissCheese +crackersCheese +7.1 goudaCheese +5.5 mozzarellaCheese +0.8 cherry
+ +40.5 roastedChicken +34.8 friedChicken +0.3 chilliPowder +2.3 cookiesChocolateChip +11 rawClam +0.1 brewedCoffee
+ +0.3 instantCoffee +1.5 coleSlaw +2 cornChips +2.6 C53 +10 cornDog +26.2 cottageCream +7.3 sourCream
+ +5 croissant +0.2 cucumber +14 bakedCustard +1.5 dandelionGreen +1.6 dates +51.9 roastedDuck +9.7 eggNog
+ +6.6 eggNoodle +1.3 cookedEggplant +20 enchilada +4.5 plainEnglishMuffin +17.2 englishWalnut +12 fishstick
+ +5.1 beefAndPorkFrankfurter +6.4 turkeyFrankfurter +2 frenchFriesFried +1.7 frenchFriesBaked +3 gingerBread
+ +grahamCracker +6.6 grapeNutCereal +21 leanGroundBeef +20 regularGroundBeef +2.6 hamLuncheon +0.6 honeyDew
+ +4.8 vanillaIceCream +5.1 vanillaIceMilk +9.3 kefir +20 lambChops +22 lambRoasted +0.6 lemon +2.1 lettuce
+ +5.2 limaBeans +2.9 cereal +6.5 macSalad +1.1 mango +margarine +0.6 marshmallow +melbaToast +8.1 twoMilk
+ +8 wholeMilk +2 mixedToast +2.7 blueMuffin +0.7 mushroom +1.3 nectarine +1.9 onion +1.7 orangeJuice
+ +21 pacifcOyster +20 eastOyster +33.5 peachPie +1.6 peachJuice +0.6 peach +4.6 peanutButter +0.7 pear
+ +3.8 pea +0.2 pepper +0.5 pickle +3.3 pineNut +0.6 pineapple +0.8 pineappleJuice +15 pinto +1.2 plantain
+ +0.5 plum +popcorn +23.9 porkChop +21 porkRib +1.8 chip +4.1 mashedPotato +0.3 pretzel +1.6 pruneJuice
+ +3 pudding +1.9 raisinBread +4.7 raisin +3.4 rawWhite +2.8 eggYolk +0.9 rhubard +4.9 brownRice +0.1 rootBeer
+ +ryeWafer +2.1 ryeSliced +0.7 dressingBlue +0.1 dressingFrench +0.1 dressingItalian +0.1 dressingThousand
+ +0.2 dressingMayo +21 salmonBroiled +17 salmonCanned +saltineCracker +8.3 skimMilk +chocolateSnackCake
+ +6.5 spaghetti +1.6 spinach +1.4 strawberry +1.1 tomato +21 trout +24 tuna +24.9 turkey +23 veal +1.5 vegeJuice
+ +0.6 chestnut +2.4 wheatBread +wheatCracker +12.4 whiteRice +2.5 yellowCake +9.9 lowYogurt +7.9 wholeYogurt >= 45;
+Max Protein: +0.1 appleJuice +3 applePie +0.3 rawApple +0.9 cannedApricot +2.3 rawAsparagus +4 rawAvocado +7.5 plainBagel
+ +2.3 bambooShoots +1.2 rawBanana +23 liverBeef +23 steakBeef +24 driedBeef +8.7 gravyBeef +0.7 lightBeer
+ +0.9 regularBeer +0.9 cookedBeet +rawBlackberry +14.4 blackeyedPea +rawBlueberry +13 crumbBread +5.3 rawBroccoli
+ +6 brusselSprout +21 beefBurrito +butter +8.1 butterMilk +11.3 bacon +2.4 cantaloupe +0.2 dietCola +4.2 carrotCake
+ +1.7 carrotJuice +0.7 rawCarrot +1.2 cauliflower +0.3 celery +6.1 blueCheese +7.1 cheddarCheese +2.1 creamCheese
+ +6.9 montereyJackCheese +8 swissCheese +crackersCheese +7.1 goudaCheese +5.5 mozzarellaCheese +0.8 cherry
+ +40.5 roastedChicken +34.8 friedChicken +0.3 chilliPowder +2.3 cookiesChocolateChip +11 rawClam +0.1 brewedCoffee
+ +0.3 instantCoffee +1.5 coleSlaw +2 cornChips +2.6 C53 +10 cornDog +26.2 cottageCream +7.3 sourCream
+ +5 croissant +0.2 cucumber +14 bakedCustard +1.5 dandelionGreen +1.6 dates +51.9 roastedDuck +9.7 eggNog
+ +6.6 eggNoodle +1.3 cookedEggplant +20 enchilada +4.5 plainEnglishMuffin +17.2 englishWalnut +12 fishstick
+ +5.1 beefAndPorkFrankfurter +6.4 turkeyFrankfurter +2 frenchFriesFried +1.7 frenchFriesBaked +3 gingerBread
+ +grahamCracker +6.6 grapeNutCereal +21 leanGroundBeef +20 regularGroundBeef +2.6 hamLuncheon +0.6 honeyDew
+ +4.8 vanillaIceCream +5.1 vanillaIceMilk +9.3 kefir +20 lambChops +22 lambRoasted +0.6 lemon +2.1 lettuce
+ +5.2 limaBeans +2.9 cereal +6.5 macSalad +1.1 mango +margarine +0.6 marshmallow +melbaToast +8.1 twoMilk
+ +8 wholeMilk +2 mixedToast +2.7 blueMuffin +0.7 mushroom +1.3 nectarine +1.9 onion +1.7 orangeJuice
+ +21 pacifcOyster +20 eastOyster +33.5 peachPie +1.6 peachJuice +0.6 peach +4.6 peanutButter +0.7 pear
+ +3.8 pea +0.2 pepper +0.5 pickle +3.3 pineNut +0.6 pineapple +0.8 pineappleJuice +15 pinto +1.2 plantain
+ +0.5 plum +popcorn +23.9 porkChop +21 porkRib +1.8 chip +4.1 mashedPotato +0.3 pretzel +1.6 pruneJuice
+ +3 pudding +1.9 raisinBread +4.7 raisin +3.4 rawWhite +2.8 eggYolk +0.9 rhubard +4.9 brownRice +0.1 rootBeer
+ +ryeWafer +2.1 ryeSliced +0.7 dressingBlue +0.1 dressingFrench +0.1 dressingItalian +0.1 dressingThousand
+ +0.2 dressingMayo +21 salmonBroiled +17 salmonCanned +saltineCracker +8.3 skimMilk +chocolateSnackCake
+ +6.5 spaghetti +1.6 spinach +1.4 strawberry +1.1 tomato +21 trout +24 tuna +24.9 turkey +23 veal +1.5 vegeJuice
+ +0.6 chestnut +2.4 wheatBread +wheatCracker +12.4 whiteRice +2.5 yellowCake +9.9 lowYogurt +7.9 wholeYogurt <= 65;
+Min Carbohydrates: +29 appleJuice +60 applePie +21 rawApple +36.1 cannedApricot +4 rawAsparagus +12 rawAvocado +38.2 plainBagel
+ +4.2 bambooShoots +26.7 rawBanana +7 liverBeef +11.2 gravyBeef +4.6 lightBeer +13.2 regularBeer +5.7 cookedBeet
+ +18.4 rawBlackberry +40.4 blackeyedPea +20.5 rawBlueberry +73 crumbBread +10 rawBroccoli +13.5 brusselSprout
+ +40 beefBurrito +0.1 butter +11.7 butterMilk +0.6 bacon +22.3 cantaloupe +0.3 dietCola +48 carrotCake
+ +17.1 carrotJuice +7.3 rawCarrot +2.9 cauliflower +1.4 celery +0.7 blueCheese +0.4 cheddarCheese +0.8 creamCheese
+ +0.2 montereyJackCheese +swissCheese +6 crackersCheese +0.6 goudaCheese +0.6 mozzarellaCheese +11.3 cherry
+ +12.6 friedChicken +1.4 chilliPowder +28 cookiesChocolateChip +0.2 rawClam +1.1 brewedCoffee +0.9 instantCoffee
+ +14.9 coleSlaw +16 cornChips +19.4 C53 +27.3 cornDog +5.6 cottageCream +9.8 sourCream +27 croissant
+ +0.8 cucumber +29 bakedCustard +5.1 dandelionGreen +61 dates +34.4 eggNog +37.3 eggNoodle +10.6 cookedEggplant
+ +24 enchilada +26.2 plainEnglishMuffin +22 englishWalnut +8 fishstick +1.1 beefAndPorkFrankfurter +0.7 turkeyFrankfurter
+ +19.8 frenchFriesFried +17 frenchFriesBaked +0.1 ginRumVodkaWhiskey +36 gingerBread +10.8 grahamCracker
+ +34.7 grapeDrink +26.4 grapeNutCereal +0.4 hamLuncheon +11.8 honeyDew +31.8 vanillaIceCream +29 vanillaIceMilk
+ +8.8 kefir +103 lemon +3.8 lettuce +16 limaBeans +26.1 cereal +39.1 macSalad +35.2 mango +margarine
+ +23 marshmallow +4 melbaToast +11.7 twoMilk +11.4 wholeMilk +12 mixedToast +22 blueMuffin +1.6 mushroom
+ +16 nectarine +11.7 onion +45.8 orange +25.8 orangeJuice +8 pacifcOyster +8 eastOyster +60.7 peachPie
+ +28.7 peachJuice +9.6 peach +2.5 peanutButter +25.1 pear +10.7 pea +1.4 pepper +1.4 pickle +5.5 pineNut
+ +19.2 pineapple +34.4 pineappleJuice +49 pinto +48 plantain +14.4 plum +6 popcorn +14.7 chip +36.9 mashedPotato
+ +2.4 pretzel +44.7 pruneJuice +30 pudding +13.2 raisinBread +115 raisin +0.4 rawWhite +0.1 eggYolk +74.9 rhubard
+ +49.7 brownRice +39.2 rootBeer +10 ryeWafer +12 ryeSliced +1.1 dressingBlue +dressingFrench +dressingItalian
+ +2.4 dressingThousand +0.4 dressingMayo +9 saltineCracker +11.9 skimMilk +17 chocolateSnackCake +39.1 spaghetti
+ +2 spinach +66.1 strawberry +0.5 tea +5.3 tomato +0.3 trout +11 vegeJuice +8.7 chestnut +11.8 wheatBread
+ +5 wheatCracker +149 whiteRice +38.6 yellowCake +43 lowYogurt +10.6 wholeYogurt >= 100;
+Max Carbohydrate: +29 appleJuice +60 applePie +21 rawApple +36.1 cannedApricot +4 rawAsparagus +12 rawAvocado +38.2 plainBagel
+ +4.2 bambooShoots +26.7 rawBanana +7 liverBeef +11.2 gravyBeef +4.6 lightBeer +13.2 regularBeer +5.7 cookedBeet
+ +18.4 rawBlackberry +40.4 blackeyedPea +20.5 rawBlueberry +73 crumbBread +10 rawBroccoli +13.5 brusselSprout
+ +40 beefBurrito +0.1 butter +11.7 butterMilk +0.6 bacon +22.3 cantaloupe +0.3 dietCola +48 carrotCake
+ +17.1 carrotJuice +7.3 rawCarrot +2.9 cauliflower +1.4 celery +0.7 blueCheese +0.4 cheddarCheese +0.8 creamCheese
+ +0.2 montereyJackCheese +swissCheese +6 crackersCheese +0.6 goudaCheese +0.6 mozzarellaCheese +11.3 cherry
+ +12.6 friedChicken +1.4 chilliPowder +28 cookiesChocolateChip +0.2 rawClam +1.1 brewedCoffee +0.9 instantCoffee
+ +14.9 coleSlaw +16 cornChips +19.4 C53 +27.3 cornDog +5.6 cottageCream +9.8 sourCream +27 croissant
+ +0.8 cucumber +29 bakedCustard +5.1 dandelionGreen +61 dates +34.4 eggNog +37.3 eggNoodle +10.6 cookedEggplant
+ +24 enchilada +26.2 plainEnglishMuffin +22 englishWalnut +8 fishstick +1.1 beefAndPorkFrankfurter +0.7 turkeyFrankfurter
+ +19.8 frenchFriesFried +17 frenchFriesBaked +0.1 ginRumVodkaWhiskey +36 gingerBread +10.8 grahamCracker
+ +34.7 grapeDrink +26.4 grapeNutCereal +0.4 hamLuncheon +11.8 honeyDew +31.8 vanillaIceCream +29 vanillaIceMilk
+ +8.8 kefir +103 lemon +3.8 lettuce +16 limaBeans +26.1 cereal +39.1 macSalad +35.2 mango +margarine
+ +23 marshmallow +4 melbaToast +11.7 twoMilk +11.4 wholeMilk +12 mixedToast +22 blueMuffin +1.6 mushroom
+ +16 nectarine +11.7 onion +45.8 orange +25.8 orangeJuice +8 pacifcOyster +8 eastOyster +60.7 peachPie
+ +28.7 peachJuice +9.6 peach +2.5 peanutButter +25.1 pear +10.7 pea +1.4 pepper +1.4 pickle +5.5 pineNut
+ +19.2 pineapple +34.4 pineappleJuice +49 pinto +48 plantain +14.4 plum +6 popcorn +14.7 chip +36.9 mashedPotato
+ +2.4 pretzel +44.7 pruneJuice +30 pudding +13.2 raisinBread +115 raisin +0.4 rawWhite +0.1 eggYolk +74.9 rhubard
+ +49.7 brownRice +39.2 rootBeer +10 ryeWafer +12 ryeSliced +1.1 dressingBlue +dressingFrench +dressingItalian
+ +2.4 dressingThousand +0.4 dressingMayo +9 saltineCracker +11.9 skimMilk +17 chocolateSnackCake +39.1 spaghetti
+ +2 spinach +66.1 strawberry +0.5 tea +5.3 tomato +0.3 trout +11 vegeJuice +8.7 chestnut +11.8 wheatBread
+ +5 wheatCracker +149 whiteRice +38.6 yellowCake +43 lowYogurt +10.6 wholeYogurt <= 160;
+Min Calcium: +17 appleJuice +3 applePie +10 rawApple +18 cannedApricot +22 rawAsparagus +19 rawAvocado +29 plainBagel
+ +10 bambooShoots +7 rawBanana +9 liverBeef +9 steakBeef +14 driedBeef +14 gravyBeef +18 lightBeer +18 regularBeer
+ +9 cookedBeet +46 rawBlackberry +40 blackeyedPea +9 rawBlueberry +122 crumbBread +205 rawBroccoli +56 brusselSprout
+ +165 beefBurrito +27 butter +285 butterMilk +5 bacon +29 cantaloupe +9 cola +12 dietCola +44 carrotCake
+ +44 carrotJuice +19 rawCarrot +17 cauliflower +14 celery +150 blueCheese +204 cheddarCheese +23 creamCheese
+ +212 montereyJackCheese +272 swissCheese +11 crackersCheese +198 goudaCheese +147 mozzarellaCheese +10 cherry
+ +21 roastedChicken +28 friedChicken +7 chilliPowder +16 cookiesChocolateChip +59 rawClam +4 brewedCoffee
+ +8 instantCoffee +54 coleSlaw +35 cornChips +2 C53 +34 cornDog +126 cottageCream +268 sourCream +20 croissant
+ +4 cucumber +297 bakedCustard +147 dandelionGreen +27 dates +27 roastedDuck +330 eggNog +16 eggNoodle
+ +10 cookedEggplant +322 enchilada +96 plainEnglishMuffin +113 englishWalnut +22 fishstick +5 beefAndPorkFrankfurter
+ +53 turkeyFrankfurter +10 frenchFriesFried +4 frenchFriesBaked +86 gingerBread +6 grahamCracker +18 grapeDrink
+ +22 grapeNutCereal +9 leanGroundBeef +9 regularGroundBeef +hamLuncheon +8 honeyDew +351 vanillaIceCream
+ +176 vanillaIceMilk +350 kefir +16 lambChops +8 lambRoasted +15 lemon +52 lettuce +19 limaBeans +36 cereal
+ +14 macSalad +21 mango +34 margarine +2 marshmallow +6 melbaToast +297 twoMilk +291 wholeMilk +273 mixedToast
+ +15 blueMuffin +2 mushroom +6 nectarine +40 onion +19 orange +27 orangeJuice +202 pacifcOyster +226 eastOyster
+ +27 peachPie +15 peachJuice +4 peach +5 peanutButter +19 pear +17 pea +9 pepper +17 pickle +2 pineNut
+ +11 pineapple +43 pineappleJuice +86 pinto +3 plantain +10 plum +popcorn +4 porkChop +9 porkRib +7 chip
+ +55 mashedPotato +pretzel +31 pruneJuice +74 pudding +25 raisinBread +71 raisin +4 rawWhite +26 eggYolk
+ +348 rhubard +23 brownRice +19 rootBeer +7 ryeWafer +20 ryeSliced +12 dressingBlue +2 dressingFrench
+ +dressingItalian +2 dressingThousand +2 dressingMayo +26 salmonBroiled +167 salmonCanned +3 saltineCracker
+ +302 skimMilk +21 chocolateSnackCake +14 spaghetti +55 spinach +28 strawberry +9 tomato +26 trout +7 tuna
+ +21 turkey +9 veal +27 vegeJuice +3 chestnut +32 wheatBread +3 wheatCracker +44 whiteRice +23 yellowCake
+ +345 lowYogurt +275 wholeYogurt >= 800;
+Max Calcium: +17 appleJuice +3 applePie +10 rawApple +18 cannedApricot +22 rawAsparagus +19 rawAvocado +29 plainBagel
+ +10 bambooShoots +7 rawBanana +9 liverBeef +9 steakBeef +14 driedBeef +14 gravyBeef +18 lightBeer +18 regularBeer
+ +9 cookedBeet +46 rawBlackberry +40 blackeyedPea +9 rawBlueberry +122 crumbBread +205 rawBroccoli +56 brusselSprout
+ +165 beefBurrito +27 butter +285 butterMilk +5 bacon +29 cantaloupe +9 cola +12 dietCola +44 carrotCake
+ +44 carrotJuice +19 rawCarrot +17 cauliflower +14 celery +150 blueCheese +204 cheddarCheese +23 creamCheese
+ +212 montereyJackCheese +272 swissCheese +11 crackersCheese +198 goudaCheese +147 mozzarellaCheese +10 cherry
+ +21 roastedChicken +28 friedChicken +7 chilliPowder +16 cookiesChocolateChip +59 rawClam +4 brewedCoffee
+ +8 instantCoffee +54 coleSlaw +35 cornChips +2 C53 +34 cornDog +126 cottageCream +268 sourCream +20 croissant
+ +4 cucumber +297 bakedCustard +147 dandelionGreen +27 dates +27 roastedDuck +330 eggNog +16 eggNoodle
+ +10 cookedEggplant +322 enchilada +96 plainEnglishMuffin +113 englishWalnut +22 fishstick +5 beefAndPorkFrankfurter
+ +53 turkeyFrankfurter +10 frenchFriesFried +4 frenchFriesBaked +86 gingerBread +6 grahamCracker +18 grapeDrink
+ +22 grapeNutCereal +9 leanGroundBeef +9 regularGroundBeef +hamLuncheon +8 honeyDew +351 vanillaIceCream
+ +176 vanillaIceMilk +350 kefir +16 lambChops +8 lambRoasted +15 lemon +52 lettuce +19 limaBeans +36 cereal
+ +14 macSalad +21 mango +34 margarine +2 marshmallow +6 melbaToast +297 twoMilk +291 wholeMilk +273 mixedToast
+ +15 blueMuffin +2 mushroom +6 nectarine +40 onion +19 orange +27 orangeJuice +202 pacifcOyster +226 eastOyster
+ +27 peachPie +15 peachJuice +4 peach +5 peanutButter +19 pear +17 pea +9 pepper +17 pickle +2 pineNut
+ +11 pineapple +43 pineappleJuice +86 pinto +3 plantain +10 plum +popcorn +4 porkChop +9 porkRib +7 chip
+ +55 mashedPotato +pretzel +31 pruneJuice +74 pudding +25 raisinBread +71 raisin +4 rawWhite +26 eggYolk
+ +348 rhubard +23 brownRice +19 rootBeer +7 ryeWafer +20 ryeSliced +12 dressingBlue +2 dressingFrench
+ +dressingItalian +2 dressingThousand +2 dressingMayo +26 salmonBroiled +167 salmonCanned +3 saltineCracker
+ +302 skimMilk +21 chocolateSnackCake +14 spaghetti +55 spinach +28 strawberry +9 tomato +26 trout +7 tuna
+ +21 turkey +9 veal +27 vegeJuice +3 chestnut +32 wheatBread +3 wheatCracker +44 whiteRice +23 yellowCake
+ +345 lowYogurt +275 wholeYogurt <= 1200;
+Min Fiber: +0.5 appleJuice +3.2 applePie +4.3 rawApple +1.5 cannedApricot +1.6 rawAsparagus +4.8 rawAvocado +0.7 plainBagel
+ +3.3 bambooShoots +3.3 rawBanana +0.4 gravyBeef +0.3 lightBeer +0.7 regularBeer +2 cookedBeet +9.7 rawBlackberry
+ +7.3 blackeyedPea +4.9 rawBlueberry +4 crumbBread +7.4 rawBroccoli +5.6 brusselSprout +5 beefBurrito
+ +2.7 cantaloupe +0.7 carrotCake +2.5 carrotJuice +2 rawCarrot +1.7 cauliflower +0.8 celery +1.3 cherry
+ +0.6 chilliPowder +0.2 cookiesChocolateChip +2.4 coleSlaw +0.3 cornChips +3.6 C53 +0.1 cornDog +0.5 croissant
+ +0.4 cucumber +0.9 dandelionGreen +7.2 dates +0.2 eggNoodle +6 cookedEggplant +2 enchilada +1.5 plainEnglishMuffin
+ +8.4 englishWalnut +1.6 frenchFriesFried +1.6 frenchFriesBaked +0.5 gingerBread +1.4 grahamCracker +0.3 grapeDrink
+ +3.3 grapeNutCereal +1.4 honeyDew +0.9 lemon +2.7 lettuce +4.6 limaBeans +0.7 cereal +macSalad +2.9 mango
+ +0.1 melbaToast +mixedToast +1.3 blueMuffin +0.8 mushroom +3.1 nectarine +2.6 onion +0.5 orangeJuice
+ +2.8 peachPie +4.1 peachJuice +2 peach +1.2 peanutButter +5 pear +5.4 pea +0.3 pepper +0.9 pickle +1.7 pineNut
+ +2.9 pineapple +0.8 pineappleJuice +18.9 pinto +4.3 plantain +2.1 plum +1.4 popcorn +0.5 chip +1.2 mashedPotato
+ +0.1 pretzel +3 pruneJuice +0.1 pudding +0.7 raisinBread +9.6 raisin +5.3 rhubard +3.9 brownRice +1.4 ryeWafer
+ +1.6 ryeSliced +0.1 dressingFrench +0.1 saltineCracker +0.1 chocolateSnackCake +1.4 spaghetti +2.3 spinach
+ +5.5 strawberry +2.2 tomato +1.5 vegeJuice +0.6 chestnut +1.4 wheatBread +0.4 wheatCracker +2.6 whiteRice
+ +0.3 yellowCake +0.3 lowYogurt >= 30;
+Max Fiber: +0.5 appleJuice +3.2 applePie +4.3 rawApple +1.5 cannedApricot +1.6 rawAsparagus +4.8 rawAvocado +0.7 plainBagel
+ +3.3 bambooShoots +3.3 rawBanana +0.4 gravyBeef +0.3 lightBeer +0.7 regularBeer +2 cookedBeet +9.7 rawBlackberry
+ +7.3 blackeyedPea +4.9 rawBlueberry +4 crumbBread +7.4 rawBroccoli +5.6 brusselSprout +5 beefBurrito
+ +2.7 cantaloupe +0.7 carrotCake +2.5 carrotJuice +2 rawCarrot +1.7 cauliflower +0.8 celery +1.3 cherry
+ +0.6 chilliPowder +0.2 cookiesChocolateChip +2.4 coleSlaw +0.3 cornChips +3.6 C53 +0.1 cornDog +0.5 croissant
+ +0.4 cucumber +0.9 dandelionGreen +7.2 dates +0.2 eggNoodle +6 cookedEggplant +2 enchilada +1.5 plainEnglishMuffin
+ +8.4 englishWalnut +1.6 frenchFriesFried +1.6 frenchFriesBaked +0.5 gingerBread +1.4 grahamCracker +0.3 grapeDrink
+ +3.3 grapeNutCereal +1.4 honeyDew +0.9 lemon +2.7 lettuce +4.6 limaBeans +0.7 cereal +macSalad +2.9 mango
+ +0.1 melbaToast +mixedToast +1.3 blueMuffin +0.8 mushroom +3.1 nectarine +2.6 onion +0.5 orangeJuice
+ +2.8 peachPie +4.1 peachJuice +2 peach +1.2 peanutButter +5 pear +5.4 pea +0.3 pepper +0.9 pickle +1.7 pineNut
+ +2.9 pineapple +0.8 pineappleJuice +18.9 pinto +4.3 plantain +2.1 plum +1.4 popcorn +0.5 chip +1.2 mashedPotato
+ +0.1 pretzel +3 pruneJuice +0.1 pudding +0.7 raisinBread +9.6 raisin +5.3 rhubard +3.9 brownRice +1.4 ryeWafer
+ +1.6 ryeSliced +0.1 dressingFrench +0.1 saltineCracker +0.1 chocolateSnackCake +1.4 spaghetti +2.3 spinach
+ +5.5 strawberry +2.2 tomato +1.5 vegeJuice +0.6 chestnut +1.4 wheatBread +0.4 wheatCracker +2.6 whiteRice
+ +0.3 yellowCake +0.3 lowYogurt <= 46;
+Min Fat: +0.3 appleJuice +18 applePie +0.5 rawApple +0.2 cannedApricot +0.3 rawAsparagus +30 rawAvocado +1.8 plainBagel
+ +0.5 bambooShoots +0.5 rawBanana +7 liverBeef +15 steakBeef +4 driedBeef +5.5 gravyBeef +0.1 cookedBeet
+ +0.6 rawBlackberry +1.1 blackeyedPea +0.6 rawBlueberry +5 crumbBread +0.5 rawBroccoli +0.8 brusselSprout
+ +17.5 beefBurrito +92 butter +2.2 butterMilk +3.9 bacon +0.7 cantaloupe +21 carrotCake +0.3 carrotJuice
+ +0.1 rawCarrot +0.1 cauliflower +0.1 celery +8.1 blueCheese +9.4 cheddarCheese +9.9 creamCheese +8.6 montereyJackCheese
+ +7.8 swissCheese +3 crackersCheese +7.7 goudaCheese +5.8 mozzarellaCheese +0.7 cherry +10.4 roastedChicken
+ +18.5 friedChicken +0.4 chilliPowder +8.8 cookiesChocolateChip +rawClam +3.1 coleSlaw +9 cornChips +C53
+ +20 cornDog +8.9 cottageCream +48.2 sourCream +12 croissant +0.1 cucumber +15 bakedCustard +0.4 dandelionGreen
+ +0.4 dates +24.8 roastedDuck +19 eggNog +2 eggNoodle +0.4 cookedEggplant +16 enchilada +1.1 plainEnglishMuffin
+ +74.2 englishWalnut +6 fishstick +13.1 beefAndPorkFrankfurter +8.3 turkeyFrankfurter +8.3 frenchFriesFried
+ +4.4 frenchFriesBaked +6.5 gingerBread +1.5 grahamCracker +0.2 grapeNutCereal +16 leanGroundBeef +17.8 regularGroundBeef
+ +6.4 hamLuncheon +0.1 honeyDew +14.4 vanillaIceCream +5.6 vanillaIceMilk +4.5 kefir +15 lambChops +13 lambRoasted
+ +51 lard +0.4 lemon +0.4 lettuce +0.3 limaBeans +1.2 cereal +0.7 macSalad +0.6 mango +91 margarine +0.3 melbaToast
+ +4.8 twoMilk +8.1 wholeMilk +0.9 mixedToast +4.9 blueMuffin +0.1 mushroom +0.6 nectarine +54 cornOil
+ +54 oliveOil +54 peanutOil +0.4 onion +0.5 orangeJuice +5 pacifcOyster +4 eastOyster +17.5 peachPie
+ +0.1 peachJuice +0.1 peach +8.2 peanutButter +0.7 pear +0.3 pea +0.1 pepper +0.1 pickle +17.3 pineNut
+ +0.7 pineapple +0.2 pineappleJuice +0.8 pinto +0.3 plantain +0.1 plum +0.4 popcorn +19.2 porkChop +20 porkRib
+ +10.1 chip +1.2 mashedPotato +0.1 pretzel +0.1 pruneJuice +11 pudding +raisinBread +0.7 raisin +5.6 eggYolk
+ +0.1 rhubard +1.2 brownRice +ryeWafer +0.9 ryeSliced +54 safflower +8 dressingBlue +9 dressingFrench
+ +9 dressingItalian +5.7 dressingThousand +11 dressingMayo +5 salmonBroiled +5 salmonCanned +1.1 saltineCracker
+ +0.4 skimMilk +4 chocolateSnackCake +54 soyBean +0.6 spaghetti +0.2 spinach +0.3 strawberry +0.3 tomato
+ +9 trout +7 tuna +4.2 turkey +9.4 veal +0.2 vegeJuice +0.1 chestnut +wheatBread +1.4 wheatCracker +0.7 whiteRice
+ +10.9 yellowCake +2.5 lowYogurt +7.4 wholeYogurt >= 16;
+Max Fat: +0.3 appleJuice +18 applePie +0.5 rawApple +0.2 cannedApricot +0.3 rawAsparagus +30 rawAvocado +1.8 plainBagel
+ +0.5 bambooShoots +0.5 rawBanana +7 liverBeef +15 steakBeef +4 driedBeef +5.5 gravyBeef +0.1 cookedBeet
+ +0.6 rawBlackberry +1.1 blackeyedPea +0.6 rawBlueberry +5 crumbBread +0.5 rawBroccoli +0.8 brusselSprout
+ +17.5 beefBurrito +92 butter +2.2 butterMilk +3.9 bacon +0.7 cantaloupe +21 carrotCake +0.3 carrotJuice
+ +0.1 rawCarrot +0.1 cauliflower +0.1 celery +8.1 blueCheese +9.4 cheddarCheese +9.9 creamCheese +8.6 montereyJackCheese
+ +7.8 swissCheese +3 crackersCheese +7.7 goudaCheese +5.8 mozzarellaCheese +0.7 cherry +10.4 roastedChicken
+ +18.5 friedChicken +0.4 chilliPowder +8.8 cookiesChocolateChip +rawClam +3.1 coleSlaw +9 cornChips +C53
+ +20 cornDog +8.9 cottageCream +48.2 sourCream +12 croissant +0.1 cucumber +15 bakedCustard +0.4 dandelionGreen
+ +0.4 dates +24.8 roastedDuck +19 eggNog +2 eggNoodle +0.4 cookedEggplant +16 enchilada +1.1 plainEnglishMuffin
+ +74.2 englishWalnut +6 fishstick +13.1 beefAndPorkFrankfurter +8.3 turkeyFrankfurter +8.3 frenchFriesFried
+ +4.4 frenchFriesBaked +6.5 gingerBread +1.5 grahamCracker +0.2 grapeNutCereal +16 leanGroundBeef +17.8 regularGroundBeef
+ +6.4 hamLuncheon +0.1 honeyDew +14.4 vanillaIceCream +5.6 vanillaIceMilk +4.5 kefir +15 lambChops +13 lambRoasted
+ +51 lard +0.4 lemon +0.4 lettuce +0.3 limaBeans +1.2 cereal +0.7 macSalad +0.6 mango +91 margarine +0.3 melbaToast
+ +4.8 twoMilk +8.1 wholeMilk +0.9 mixedToast +4.9 blueMuffin +0.1 mushroom +0.6 nectarine +54 cornOil
+ +54 oliveOil +54 peanutOil +0.4 onion +0.5 orangeJuice +5 pacifcOyster +4 eastOyster +17.5 peachPie
+ +0.1 peachJuice +0.1 peach +8.2 peanutButter +0.7 pear +0.3 pea +0.1 pepper +0.1 pickle +17.3 pineNut
+ +0.7 pineapple +0.2 pineappleJuice +0.8 pinto +0.3 plantain +0.1 plum +0.4 popcorn +19.2 porkChop +20 porkRib
+ +10.1 chip +1.2 mashedPotato +0.1 pretzel +0.1 pruneJuice +11 pudding +raisinBread +0.7 raisin +5.6 eggYolk
+ +0.1 rhubard +1.2 brownRice +ryeWafer +0.9 ryeSliced +54 safflower +8 dressingBlue +9 dressingFrench
+ +9 dressingItalian +5.7 dressingThousand +11 dressingMayo +5 salmonBroiled +5 salmonCanned +1.1 saltineCracker
+ +0.4 skimMilk +4 chocolateSnackCake +54 soyBean +0.6 spaghetti +0.2 spinach +0.3 strawberry +0.3 tomato
+ +9 trout +7 tuna +4.2 turkey +9.4 veal +0.2 vegeJuice +0.1 chestnut +wheatBread +1.4 wheatCracker +0.7 whiteRice
+ +10.9 yellowCake +2.5 lowYogurt +7.4 wholeYogurt <= 28;
+Min Cholestrol: +410 liverBeef +77 steakBeef +46 driedBeef +7 gravyBeef +5 crumbBread +52 beefBurrito +247 butter +9 butterMilk
+ +27 bacon +74 carrotCake +21 blueCheese +30 cheddarCheese +31 creamCheese +26 montereyJackCheese +26 swissCheese
+ +6 crackersCheese +0.32 goudaCheese +22 mozzarellaCheese +125 roastedChicken +119 friedChicken +5 cookiesChocolateChip
+ +43 rawClam +10 coleSlaw +37 cornDog +31 cottageCream +102 sourCream +13 croissant +278 bakedCustard
+ +198 roastedDuck +149 eggNog +50 eggNoodle +19 enchilada +52 fishstick +23 beefAndPorkFrankfurter +44 turkeyFrankfurter
+ +gingerBread +74 leanGroundBeef +76 regularGroundBeef +13 hamLuncheon +60 vanillaIceCream +18 vanillaIceMilk
+ +10 kefir +77 lambChops +78 lambRoasted +49 lard +22 twoMilk +33 wholeMilk +45 blueMuffin +120 pacifcOyster
+ +120 eastOyster +84 porkChop +69 porkRib +4 mashedPotato +pudding +272 eggYolk +3 dressingBlue +4 dressingThousand
+ +8 dressingMayo +60 salmonBroiled +34 salmonCanned +4 saltineCracker +4 skimMilk +15 chocolateSnackCake
+ +71 trout +55 tuna +64 turkey +109 veal +38 yellowCake +10 lowYogurt +29 wholeYogurt >= 220;
+Max Cholestrol: +410 liverBeef +77 steakBeef +46 driedBeef +7 gravyBeef +5 crumbBread +52 beefBurrito +247 butter +9 butterMilk
+ +27 bacon +74 carrotCake +21 blueCheese +30 cheddarCheese +31 creamCheese +26 montereyJackCheese +26 swissCheese
+ +6 crackersCheese +0.32 goudaCheese +22 mozzarellaCheese +125 roastedChicken +119 friedChicken +5 cookiesChocolateChip
+ +43 rawClam +10 coleSlaw +37 cornDog +31 cottageCream +102 sourCream +13 croissant +278 bakedCustard
+ +198 roastedDuck +149 eggNog +50 eggNoodle +19 enchilada +52 fishstick +23 beefAndPorkFrankfurter +44 turkeyFrankfurter
+ +gingerBread +74 leanGroundBeef +76 regularGroundBeef +13 hamLuncheon +60 vanillaIceCream +18 vanillaIceMilk
+ +10 kefir +77 lambChops +78 lambRoasted +49 lard +22 twoMilk +33 wholeMilk +45 blueMuffin +120 pacifcOyster
+ +120 eastOyster +84 porkChop +69 porkRib +4 mashedPotato +pudding +272 eggYolk +3 dressingBlue +4 dressingThousand
+ +8 dressingMayo +60 salmonBroiled +34 salmonCanned +4 saltineCracker +4 skimMilk +15 chocolateSnackCake
+ +71 trout +55 tuna +64 turkey +109 veal +38 yellowCake +10 lowYogurt +29 wholeYogurt <= 360;
+Min Iron: +0.9 appleJuice +1.8 applePie +0.3 rawApple +cannedApricot +0.6 rawAsparagus +2 rawAvocado +1.8 plainBagel
+ +0.4 bambooShoots +0.3 rawBanana +5.3 liverBeef +2.6 steakBeef +2.3 driedBeef +1.6 gravyBeef +0.1 lightBeer
+ +0.1 regularBeer +0.5 cookedBeet +0.8 rawBlackberry +3.6 blackeyedPea +0.2 rawBlueberry +4.1 crumbBread
+ +2.2 rawBroccoli +1.9 brusselSprout +2.7 beefBurrito +0.2 butter +0.1 butterMilk +0.4 bacon +0.6 cantaloupe
+ +0.1 cola +0.1 dietCola +1.3 carrotCake +0.6 carrotJuice +0.4 rawCarrot +0.3 cauliflower +0.2 celery
+ +0.1 blueCheese +0.2 cheddarCheese +0.3 creamCheese +0.2 montereyJackCheese +0.3 crackersCheese +0.1 goudaCheese
+ +0.3 cherry +1.7 roastedChicken +1.8 friedChicken +0.4 chilliPowder +0.8 cookiesChocolateChip +2.6 rawClam
+ +brewedCoffee +0.1 instantCoffee +0.7 coleSlaw +0.5 cornChips +0.5 C53 +1.9 cornDog +0.3 cottageCream
+ +0.1 sourCream +2.1 croissant +0.1 cucumber +1.1 bakedCustard +1.9 dandelionGreen +dates +6 roastedDuck
+ +0.5 eggNog +2.6 eggNoodle +0.6 cookedEggplant +3.3 enchilada +1.7 plainEnglishMuffin +2.9 englishWalnut
+ +0.6 fishstick +0.5 beefAndPorkFrankfurter +0.8 turkeyFrankfurter +0.4 frenchFriesFried +0.7 frenchFriesBaked
+ +1.8 gingerBread +0.4 grahamCracker +0.8 grapeDrink +2.5 grapeNutCereal +1.8 leanGroundBeef +2.1 regularGroundBeef
+ +0.1 hamLuncheon +0.1 honeyDew +0.1 vanillaIceCream +0.2 vanillaIceMilk +0.5 kefir +1.5 lambChops +1.7 lambRoasted
+ +1.6 lemon +0.5 lettuce +1.2 limaBeans +5.1 cereal +2.1 macSalad +0.3 mango +0.1 margarine +0.1 marshmallow
+ +0.1 melbaToast +0.1 twoMilk +0.1 wholeMilk +0.8 mixedToast +0.9 blueMuffin +0.4 mushroom +0.2 nectarine
+ +0.2 oliveOil +0.6 onion +0.2 orange +0.5 orangeJuice +16.8 pacifcOyster +15.6 eastOyster +1.9 peachPie
+ +0.7 peachJuice +0.1 peach +0.3 peanutButter +0.4 pear +0.8 pea +0.5 pepper +0.7 pickle +0.9 pineNut
+ +0.6 pineapple +0.6 pineappleJuice +5.4 pinto +0.9 plantain +0.3 plum +0.2 popcorn +0.7 porkChop +0.8 porkRib
+ +0.3 chip +0.6 mashedPotato +0.1 pretzel +3 pruneJuice +1.2 pudding +0.8 raisinBread +3 raisin +0.9 eggYolk
+ +0.5 rhubard +1.2 brownRice +0.2 rootBeer +0.5 ryeWafer +0.7 ryeSliced +0.1 dressingFrench +0.1 dressingThousand
+ +0.1 dressingMayo +0.5 salmonBroiled +0.7 salmonCanned +0.5 saltineCracker +0.1 skimMilk +chocolateSnackCake
+ +2.1 spaghetti +1.5 spinach +1.5 strawberry +0.6 tomato +trout +1.6 tuna +1.5 turkey +0.8 veal +vegeJuice
+ +0.6 chestnut +0.9 wheatBread +0.3 wheatCracker +5.4 whiteRice +1.2 yellowCake +0.2 lowYogurt +0.1 wholeYogurt >= 5;
+Max Iron: +0.9 appleJuice +1.8 applePie +0.3 rawApple +cannedApricot +0.6 rawAsparagus +2 rawAvocado +1.8 plainBagel
+ +0.4 bambooShoots +0.3 rawBanana +5.3 liverBeef +2.6 steakBeef +2.3 driedBeef +1.6 gravyBeef +0.1 lightBeer
+ +0.1 regularBeer +0.5 cookedBeet +0.8 rawBlackberry +3.6 blackeyedPea +0.2 rawBlueberry +4.1 crumbBread
+ +2.2 rawBroccoli +1.9 brusselSprout +2.7 beefBurrito +0.2 butter +0.1 butterMilk +0.4 bacon +0.6 cantaloupe
+ +0.1 cola +0.1 dietCola +1.3 carrotCake +0.6 carrotJuice +0.4 rawCarrot +0.3 cauliflower +0.2 celery
+ +0.1 blueCheese +0.2 cheddarCheese +0.3 creamCheese +0.2 montereyJackCheese +0.3 crackersCheese +0.1 goudaCheese
+ +0.3 cherry +1.7 roastedChicken +1.8 friedChicken +0.4 chilliPowder +0.8 cookiesChocolateChip +2.6 rawClam
+ +brewedCoffee +0.1 instantCoffee +0.7 coleSlaw +0.5 cornChips +0.5 C53 +1.9 cornDog +0.3 cottageCream
+ +0.1 sourCream +2.1 croissant +0.1 cucumber +1.1 bakedCustard +1.9 dandelionGreen +dates +6 roastedDuck
+ +0.5 eggNog +2.6 eggNoodle +0.6 cookedEggplant +3.3 enchilada +1.7 plainEnglishMuffin +2.9 englishWalnut
+ +0.6 fishstick +0.5 beefAndPorkFrankfurter +0.8 turkeyFrankfurter +0.4 frenchFriesFried +0.7 frenchFriesBaked
+ +1.8 gingerBread +0.4 grahamCracker +0.8 grapeDrink +2.5 grapeNutCereal +1.8 leanGroundBeef +2.1 regularGroundBeef
+ +0.1 hamLuncheon +0.1 honeyDew +0.1 vanillaIceCream +0.2 vanillaIceMilk +0.5 kefir +1.5 lambChops +1.7 lambRoasted
+ +1.6 lemon +0.5 lettuce +1.2 limaBeans +5.1 cereal +2.1 macSalad +0.3 mango +0.1 margarine +0.1 marshmallow
+ +0.1 melbaToast +0.1 twoMilk +0.1 wholeMilk +0.8 mixedToast +0.9 blueMuffin +0.4 mushroom +0.2 nectarine
+ +0.2 oliveOil +0.6 onion +0.2 orange +0.5 orangeJuice +16.8 pacifcOyster +15.6 eastOyster +1.9 peachPie
+ +0.7 peachJuice +0.1 peach +0.3 peanutButter +0.4 pear +0.8 pea +0.5 pepper +0.7 pickle +0.9 pineNut
+ +0.6 pineapple +0.6 pineappleJuice +5.4 pinto +0.9 plantain +0.3 plum +0.2 popcorn +0.7 porkChop +0.8 porkRib
+ +0.3 chip +0.6 mashedPotato +0.1 pretzel +3 pruneJuice +1.2 pudding +0.8 raisinBread +3 raisin +0.9 eggYolk
+ +0.5 rhubard +1.2 brownRice +0.2 rootBeer +0.5 ryeWafer +0.7 ryeSliced +0.1 dressingFrench +0.1 dressingThousand
+ +0.1 dressingMayo +0.5 salmonBroiled +0.7 salmonCanned +0.5 saltineCracker +0.1 skimMilk +chocolateSnackCake
+ +2.1 spaghetti +1.5 spinach +1.5 strawberry +0.6 tomato +trout +1.6 tuna +1.5 turkey +0.8 veal +vegeJuice
+ +0.6 chestnut +0.9 wheatBread +0.3 wheatCracker +5.4 whiteRice +1.2 yellowCake +0.2 lowYogurt +0.1 wholeYogurt <= 10;
+Min Magnesium: +8 appleJuice +10 applePie +6 rawApple +13 cannedApricot +17 rawAsparagus +70 rawAvocado +14 plainBagel
+ +6 bambooShoots +32 rawBanana +16 liverBeef +18 steakBeef +27 driedBeef +3 gravyBeef +18 lightBeer +23 regularBeer
+ +31 cookedBeet +29 rawBlackberry +85 blackeyedPea +7 rawBlueberry +31 crumbBread +106 rawBroccoli +32 brusselSprout
+ +61 beefBurrito +2 butter +26 butterMilk +10 bacon +19 cantaloupe +3 cola +4 dietCola +12 carrotCake
+ +26 carrotJuice +11 rawCarrot +7 cauliflower +5 celery +7 blueCheese +8 cheddarCheese +2 creamCheese
+ +8 montereyJackCheese +10 swissCheese +22 crackersCheese +8 goudaCheese +5 mozzarellaCheese +8 cherry
+ +35 roastedChicken +34 friedChicken +4 chilliPowder +9 cookiesChocolateChip +31 rawClam +14 brewedCoffee
+ +11 instantCoffee +12 coleSlaw +19 cornChips +25 C53 +22 cornDog +11 cottageCream +26 sourCream +6 croissant
+ +3 cucumber +37 bakedCustard +20 dandelionGreen +29 dates +44 roastedDuck +47 eggNog +28 eggNoodle +21 cookedEggplant
+ +76 enchilada +11 plainEnglishMuffin +203 englishWalnut +32 fishstick +5 beefAndPorkFrankfurter +8 turkeyFrankfurter
+ +17 frenchFriesFried +11 frenchFriesBaked +7 gingerBread +5 grahamCracker +15 grapeDrink +38 grapeNutCereal
+ +21 leanGroundBeef +18 regularGroundBeef +2 hamLuncheon +9 honeyDew +19 vanillaIceCream +19 vanillaIceMilk
+ +28 kefir +11 lambChops +20 lambRoasted +11 lemon +18 lettuce +29 limaBeans +27 cereal +17 macSalad
+ +18 mango +3 margarine +marshmallow +30 melbaToast +33 twoMilk +33 wholeMilk +12 mixedToast +5 blueMuffin
+ +4 mushroom +11 nectarine +16 onion +4 orange +27 orangeJuice +54 pacifcOyster +116 eastOyster +16 peachPie
+ +18 peachJuice +6 peach +28 peanutButter +9 pear +15 pea +4 pepper +8 pickle +67 pineNut +21 pineapple
+ +34 pineappleJuice +103 pinto +49 plantain +8 plum +23 popcorn +22 porkChop +16 porkRib +17 chip +39 mashedPotato
+ +pretzel +36 pruneJuice +24 pudding +6 raisinBread +48 raisin +3 rawWhite +3 eggYolk +30 rhubard +72 brownRice
+ +4 rootBeer +16 ryeWafer +6 ryeSliced +dressingBlue +dressingFrench +dressingItalian +dressingThousand
+ +dressingMayo +26 salmonBroiled +23 salmonCanned +3 saltineCracker +28 skimMilk +2 chocolateSnackCake
+ +17 spaghetti +44 spinach +18 strawberry +7 tea +14 tomato +30 trout +27 tuna +22 turkey +15 veal +27 vegeJuice
+ +3 chestnut +12 wheatBread +7 wheatCracker +63 whiteRice +4 yellowCake +33 lowYogurt +27 wholeYogurt >= 300;
+Max Magnesium: +8 appleJuice +10 applePie +6 rawApple +13 cannedApricot +17 rawAsparagus +70 rawAvocado +14 plainBagel
+ +6 bambooShoots +32 rawBanana +16 liverBeef +18 steakBeef +27 driedBeef +3 gravyBeef +18 lightBeer +23 regularBeer
+ +31 cookedBeet +29 rawBlackberry +85 blackeyedPea +7 rawBlueberry +31 crumbBread +106 rawBroccoli +32 brusselSprout
+ +61 beefBurrito +2 butter +26 butterMilk +10 bacon +19 cantaloupe +3 cola +4 dietCola +12 carrotCake
+ +26 carrotJuice +11 rawCarrot +7 cauliflower +5 celery +7 blueCheese +8 cheddarCheese +2 creamCheese
+ +8 montereyJackCheese +10 swissCheese +22 crackersCheese +8 goudaCheese +5 mozzarellaCheese +8 cherry
+ +35 roastedChicken +34 friedChicken +4 chilliPowder +9 cookiesChocolateChip +31 rawClam +14 brewedCoffee
+ +11 instantCoffee +12 coleSlaw +19 cornChips +25 C53 +22 cornDog +11 cottageCream +26 sourCream +6 croissant
+ +3 cucumber +37 bakedCustard +20 dandelionGreen +29 dates +44 roastedDuck +47 eggNog +28 eggNoodle +21 cookedEggplant
+ +76 enchilada +11 plainEnglishMuffin +203 englishWalnut +32 fishstick +5 beefAndPorkFrankfurter +8 turkeyFrankfurter
+ +17 frenchFriesFried +11 frenchFriesBaked +7 gingerBread +5 grahamCracker +15 grapeDrink +38 grapeNutCereal
+ +21 leanGroundBeef +18 regularGroundBeef +2 hamLuncheon +9 honeyDew +19 vanillaIceCream +19 vanillaIceMilk
+ +28 kefir +11 lambChops +20 lambRoasted +11 lemon +18 lettuce +29 limaBeans +27 cereal +17 macSalad
+ +18 mango +3 margarine +marshmallow +30 melbaToast +33 twoMilk +33 wholeMilk +12 mixedToast +5 blueMuffin
+ +4 mushroom +11 nectarine +16 onion +4 orange +27 orangeJuice +54 pacifcOyster +116 eastOyster +16 peachPie
+ +18 peachJuice +6 peach +28 peanutButter +9 pear +15 pea +4 pepper +8 pickle +67 pineNut +21 pineapple
+ +34 pineappleJuice +103 pinto +49 plantain +8 plum +23 popcorn +22 porkChop +16 porkRib +17 chip +39 mashedPotato
+ +pretzel +36 pruneJuice +24 pudding +6 raisinBread +48 raisin +3 rawWhite +3 eggYolk +30 rhubard +72 brownRice
+ +4 rootBeer +16 ryeWafer +6 ryeSliced +dressingBlue +dressingFrench +dressingItalian +dressingThousand
+ +dressingMayo +26 salmonBroiled +23 salmonCanned +3 saltineCracker +28 skimMilk +2 chocolateSnackCake
+ +17 spaghetti +44 spinach +18 strawberry +7 tea +14 tomato +30 trout +27 tuna +22 turkey +15 veal +27 vegeJuice
+ +3 chestnut +12 wheatBread +7 wheatCracker +63 whiteRice +4 yellowCake +33 lowYogurt +27 wholeYogurt <= 500;
+Min Calories: +116 appleJuice +403 applePie +80 rawApple +141 cannedApricot +22 rawAsparagus +305 rawAvocado +200 plainBagel
+ +25 bambooShoots +105 rawBanana +185 liverBeef +240 steakBeef +145 driedBeef +124 gravyBeef +100 lightBeer
+ +146 regularBeer +26 cookedBeet +74 rawBlackberry +224 blackeyedPea +82 rawBlueberry +390 crumbBread
+ +53 rawBroccoli +60 brusselSprout +390 beefBurrito +813 butter +99 butterMilk +86 bacon +94 cantaloupe
+ +2 dietCola +385 carrotCake +73 carrotJuice +31 rawCarrot +15 cauliflower +6 celery +100 blueCheese
+ +114 cheddarCheese +99 creamCheese +106 montereyJackCheese +107 swissCheese +50 crackersCheese +101 goudaCheese
+ +80 mozzarellaCheese +49 cherry +266 roastedChicken +364 friedChicken +8 chilliPowder +180 cookiesChocolateChip
+ +65 rawClam +2 brewedCoffee +2 instantCoffee +84 coleSlaw +155 cornChips +83 C53 +330 cornDog +215 cottageCream
+ +493 sourCream +235 croissant +4 cucumber +305 bakedCustard +25 dandelionGreen +228 dates +445 roastedDuck
+ +342 eggNog +200 eggNoodle +45 cookedEggplant +235 enchilada +140 plainEnglishMuffin +770 englishWalnut
+ +140 fishstick +145 beefAndPorkFrankfurter +102 turkeyFrankfurter +158 frenchFriesFried +111 frenchFriesBaked
+ +97 ginRumVodkaWhiskey +262 gingerBread +60 grahamCracker +112 grapeDrink +202 grapeNutCereal +230 leanGroundBeef
+ +245 regularGroundBeef +70 hamLuncheon +45 honeyDew +269 vanillaIceCream +183 vanillaIceMilk +160 kefir
+ +220 lambChops +205 lambRoasted +453 lard +397 lemon +21 lettuce +85 limaBeans +125 cereal +190 macSalad
+ +135 mango +812 margarine +90 marshmallow +20 melbaToast +121 twoMilk +150 wholeMilk +65 mixedToast
+ +140 blueMuffin +9 mushroom +67 nectarine +482 cornOil +477 oliveOil +477 peanutOil +54 onion +177 orange
+ +111 orangeJuice +160 pacifcOyster +160 eastOyster +405 peachPie +109 peachJuice +37 peach +95 peanutButter
+ +98 pear +59 pea +5 pepper +5 pickle +161 pineNut +76 pineapple +140 pineappleJuice +265 pinto +179 plantain
+ +55 plum +30 popcorn +275 porkChop +270 porkRib +148 chip +162 mashedPotato +10 pretzel +181 pruneJuice
+ +205 pudding +68 raisinBread +435 raisin +16 rawWhite +63 eggYolk +279 rhubard +232 brownRice +152 rootBeer
+ +55 ryeWafer +65 ryeSliced +482 safflower +75 dressingBlue +85 dressingFrench +80 dressingItalian +60 dressingThousand
+ +100 dressingMayo +140 salmonBroiled +120 salmonCanned +50 saltineCracker +86 skimMilk +105 chocolateSnackCake
+ +482 soyBean +190 spaghetti +12 spinach +245 strawberry +2 tea +24 tomato +175 trout +165 tuna +145 turkey
+ +185 veal +46 vegeJuice +35 chestnut +65 wheatBread +35 wheatCracker +670 whiteRice +245 yellowCake
+ +231 lowYogurt +138 wholeYogurt >= 1000;
+Max Calories: +116 appleJuice +403 applePie +80 rawApple +141 cannedApricot +22 rawAsparagus +305 rawAvocado +200 plainBagel
+ +25 bambooShoots +105 rawBanana +185 liverBeef +240 steakBeef +145 driedBeef +124 gravyBeef +100 lightBeer
+ +146 regularBeer +26 cookedBeet +74 rawBlackberry +224 blackeyedPea +82 rawBlueberry +390 crumbBread
+ +53 rawBroccoli +60 brusselSprout +390 beefBurrito +813 butter +99 butterMilk +86 bacon +94 cantaloupe
+ +2 dietCola +385 carrotCake +73 carrotJuice +31 rawCarrot +15 cauliflower +6 celery +100 blueCheese
+ +114 cheddarCheese +99 creamCheese +106 montereyJackCheese +107 swissCheese +50 crackersCheese +101 goudaCheese
+ +80 mozzarellaCheese +49 cherry +266 roastedChicken +364 friedChicken +8 chilliPowder +180 cookiesChocolateChip
+ +65 rawClam +2 brewedCoffee +2 instantCoffee +84 coleSlaw +155 cornChips +83 C53 +330 cornDog +215 cottageCream
+ +493 sourCream +235 croissant +4 cucumber +305 bakedCustard +25 dandelionGreen +228 dates +445 roastedDuck
+ +342 eggNog +200 eggNoodle +45 cookedEggplant +235 enchilada +140 plainEnglishMuffin +770 englishWalnut
+ +140 fishstick +145 beefAndPorkFrankfurter +102 turkeyFrankfurter +158 frenchFriesFried +111 frenchFriesBaked
+ +97 ginRumVodkaWhiskey +262 gingerBread +60 grahamCracker +112 grapeDrink +202 grapeNutCereal +230 leanGroundBeef
+ +245 regularGroundBeef +70 hamLuncheon +45 honeyDew +269 vanillaIceCream +183 vanillaIceMilk +160 kefir
+ +220 lambChops +205 lambRoasted +453 lard +397 lemon +21 lettuce +85 limaBeans +125 cereal +190 macSalad
+ +135 mango +812 margarine +90 marshmallow +20 melbaToast +121 twoMilk +150 wholeMilk +65 mixedToast
+ +140 blueMuffin +9 mushroom +67 nectarine +482 cornOil +477 oliveOil +477 peanutOil +54 onion +177 orange
+ +111 orangeJuice +160 pacifcOyster +160 eastOyster +405 peachPie +109 peachJuice +37 peach +95 peanutButter
+ +98 pear +59 pea +5 pepper +5 pickle +161 pineNut +76 pineapple +140 pineappleJuice +265 pinto +179 plantain
+ +55 plum +30 popcorn +275 porkChop +270 porkRib +148 chip +162 mashedPotato +10 pretzel +181 pruneJuice
+ +205 pudding +68 raisinBread +435 raisin +16 rawWhite +63 eggYolk +279 rhubard +232 brownRice +152 rootBeer
+ +55 ryeWafer +65 ryeSliced +482 safflower +75 dressingBlue +85 dressingFrench +80 dressingItalian +60 dressingThousand
+ +100 dressingMayo +140 salmonBroiled +120 salmonCanned +50 saltineCracker +86 skimMilk +105 chocolateSnackCake
+ +482 soyBean +190 spaghetti +12 spinach +245 strawberry +2 tea +24 tomato +175 trout +165 tuna +145 turkey
+ +185 veal +46 vegeJuice +35 chestnut +65 wheatBread +35 wheatCracker +670 whiteRice +245 yellowCake
+ +231 lowYogurt +138 wholeYogurt <= 2500;
+Min Sodium: +7 appleJuice +474 applePie +rawApple +8 cannedApricot +4 rawAsparagus +21 rawAvocado +245 plainBagel
+ +9 bambooShoots +rawBanana +90 liverBeef +53 steakBeef +3053 driedBeef +117 gravyBeef +10 lightBeer
+ +19 regularBeer +42 cookedBeet +9 blackeyedPea +9 rawBlueberry +736 crumbBread +20 rawBroccoli +17 brusselSprout
+ +516 beefBurrito +933 butter +257 butterMilk +719 bacon +24 cantaloupe +14 cola +21 dietCola +279 carrotCake
+ +54 carrotJuice +25 rawCarrot +4 cauliflower +0.35 celery +396 blueCheese +176 cheddarCheese +84 creamCheese
+ +152 montereyJackCheese +74 swissCheese +112 crackersCheese +232 goudaCheese +106 mozzarellaCheese +120 roastedChicken
+ +385 friedChicken +26 chilliPowder +140 cookiesChocolateChip +102 rawClam +5 brewedCoffee +8 instantCoffee
+ +28 coleSlaw +233 cornChips +13 C53 +1252 cornDog +850 cottageCream +123 sourCream +452 croissant +0.6 cucumber
+ +209 bakedCustard +42 dandelionGreen +2 dates +143 roastedDuck +138 eggNog +3 eggNoodle +5 cookedEggplant
+ +1332 enchilada +378 plainEnglishMuffin +12 englishWalnut +106 fishstick +504 beefAndPorkFrankfurter
+ +550 turkeyFrankfurter +108 frenchFriesFried +15 frenchFriesBaked +0.4 ginRumVodkaWhiskey +289 gingerBread
+ +86 grahamCracker +34 grapeDrink +394 grapeNutCereal +65 leanGroundBeef +70 regularGroundBeef +271 hamLuncheon
+ +13 honeyDew +116 vanillaIceCream +105 vanillaIceMilk +50 kefir +46 lambChops +57 lambRoasted +8 lemon
+ +8 lettuce +45 limaBeans +227 cereal +macSalad +4 mango +1066 margarine +55 marshmallow +44 melbaToast
+ +122 twoMilk +120 wholeMilk +106 mixedToast +225 blueMuffin +mushroom +3 onion +46 orange +2 orangeJuice
+ +185 pacifcOyster +175 eastOyster +423 peachPie +11 peachJuice +75 peanutButter +pear +186 pea +pepper
+ +928 pickle +20 pineNut +2 pineapple +3 pineappleJuice +3 pinto +8 plantain +plum +0.5 popcorn +61 porkChop
+ +37 porkRib +133 chip +636 mashedPotato +48 pretzel +10 pruneJuice +285 pudding +92 raisinBread +17 raisin
+ +50 rawWhite +8 eggYolk +2 rhubard +49 rootBeer +115 ryeWafer +175 ryeSliced +0.3 dressingBlue +188 dressingFrench
+ +162 dressingItalian +110 dressingThousand +80 dressingMayo +55 salmonBroiled +443 salmonCanned +165 saltineCracker
+ +126 skimMilk +105 chocolateSnackCake +spaghetti +44 spinach +8 strawberry +6.7 tea +10 tomato +122 trout
+ +303 tuna +60 turkey +56 veal +883 vegeJuice +6 chestnut +135 wheatBread +69 wheatCracker +9 whiteRice
+ +192 yellowCake +133 lowYogurt +104 wholeYogurt >= 1150;
+Max Sodium: +7 appleJuice +474 applePie +rawApple +8 cannedApricot +4 rawAsparagus +21 rawAvocado +245 plainBagel
+ +9 bambooShoots +rawBanana +90 liverBeef +53 steakBeef +3053 driedBeef +117 gravyBeef +10 lightBeer
+ +19 regularBeer +42 cookedBeet +9 blackeyedPea +9 rawBlueberry +736 crumbBread +20 rawBroccoli +17 brusselSprout
+ +516 beefBurrito +933 butter +257 butterMilk +719 bacon +24 cantaloupe +14 cola +21 dietCola +279 carrotCake
+ +54 carrotJuice +25 rawCarrot +4 cauliflower +0.35 celery +396 blueCheese +176 cheddarCheese +84 creamCheese
+ +152 montereyJackCheese +74 swissCheese +112 crackersCheese +232 goudaCheese +106 mozzarellaCheese +120 roastedChicken
+ +385 friedChicken +26 chilliPowder +140 cookiesChocolateChip +102 rawClam +5 brewedCoffee +8 instantCoffee
+ +28 coleSlaw +233 cornChips +13 C53 +1252 cornDog +850 cottageCream +123 sourCream +452 croissant +0.6 cucumber
+ +209 bakedCustard +42 dandelionGreen +2 dates +143 roastedDuck +138 eggNog +3 eggNoodle +5 cookedEggplant
+ +1332 enchilada +378 plainEnglishMuffin +12 englishWalnut +106 fishstick +504 beefAndPorkFrankfurter
+ +550 turkeyFrankfurter +108 frenchFriesFried +15 frenchFriesBaked +0.4 ginRumVodkaWhiskey +289 gingerBread
+ +86 grahamCracker +34 grapeDrink +394 grapeNutCereal +65 leanGroundBeef +70 regularGroundBeef +271 hamLuncheon
+ +13 honeyDew +116 vanillaIceCream +105 vanillaIceMilk +50 kefir +46 lambChops +57 lambRoasted +8 lemon
+ +8 lettuce +45 limaBeans +227 cereal +macSalad +4 mango +1066 margarine +55 marshmallow +44 melbaToast
+ +122 twoMilk +120 wholeMilk +106 mixedToast +225 blueMuffin +mushroom +3 onion +46 orange +2 orangeJuice
+ +185 pacifcOyster +175 eastOyster +423 peachPie +11 peachJuice +75 peanutButter +pear +186 pea +pepper
+ +928 pickle +20 pineNut +2 pineapple +3 pineappleJuice +3 pinto +8 plantain +plum +0.5 popcorn +61 porkChop
+ +37 porkRib +133 chip +636 mashedPotato +48 pretzel +10 pruneJuice +285 pudding +92 raisinBread +17 raisin
+ +50 rawWhite +8 eggYolk +2 rhubard +49 rootBeer +115 ryeWafer +175 ryeSliced +0.3 dressingBlue +188 dressingFrench
+ +162 dressingItalian +110 dressingThousand +80 dressingMayo +55 salmonBroiled +443 salmonCanned +165 saltineCracker
+ +126 skimMilk +105 chocolateSnackCake +spaghetti +44 spinach +8 strawberry +6.7 tea +10 tomato +122 trout
+ +303 tuna +60 turkey +56 veal +883 vegeJuice +6 chestnut +135 wheatBread +69 wheatCracker +9 whiteRice
+ +192 yellowCake +133 lowYogurt +104 wholeYogurt <= 1850;
+Min Phosphorus: +17 appleJuice +50 applePie +10 rawApple +23 cannedApricot +55 rawAsparagus +73 rawAvocado +46 plainBagel
+ +33 bambooShoots +22 rawBanana +392 liverBeef +186 steakBeef +287 driedBeef +70 gravyBeef +43 lightBeer
+ +44 regularBeer +26 cookedBeet +30 rawBlackberry +208 blackeyedPea +15 rawBlueberry +141 crumbBread
+ +86 rawBroccoli +87 brusselSprout +274 beefBurrito +26 butter +219 butterMilk +138 bacon +45 cantaloupe
+ +46 cola +30 dietCola +62 carrotCake +77 carrotJuice +32 rawCarrot +22 cauliflower +10 celery +110 blueCheese
+ +146 cheddarCheese +30 creamCheese +126 montereyJackCheese +171 swissCheese +17 crackersCheese +155 goudaCheese
+ +105 mozzarellaCheese +13 cherry +273 roastedChicken +258 friedChicken +8 chilliPowder +41 cookiesChocolateChip
+ +138 rawClam +2 brewedCoffee +8 instantCoffee +38 coleSlaw +52 cornChips +79 C53 +303 cornDog +277 cottageCream
+ +195 sourCream +64 croissant +5 cucumber +310 bakedCustard +36 dandelionGreen +33 dates +449 roastedDuck
+ +278 eggNog +94 eggNoodle +35 cookedEggplant +198 enchilada +67 plainEnglishMuffin +380 englishWalnut
+ +116 fishstick +39 beefAndPorkFrankfurter +71 turkeyFrankfurter +47 frenchFriesFried +43 frenchFriesBaked
+ +2 ginRumVodkaWhiskey +85 gingerBread +20 grahamCracker +14 grapeDrink +142 grapeNutCereal +134 leanGroundBeef
+ +144 regularGroundBeef +17 hamLuncheon +13 honeyDew +134 vanillaIceCream +129 vanillaIceMilk +319 kefir
+ +132 lambChops +162 lambRoasted +lard +19 lemon +38 lettuce +54 limaBeans +88 cereal +85 macSalad +22 mango
+ +26 margarine +23 marshmallow +10 melbaToast +232 twoMilk +228 wholeMilk +55 mixedToast +90 blueMuffin
+ +36 mushroom +22 nectarine +cornOil +oliveOil +peanutOil +46 onion +4 orange +42 orangeJuice +379 pacifcOyster
+ +343 eastOyster +55 peachPie +43 peachJuice +10 peach +60 peanutButter +18 pear +57 pea +3.67 pepper
+ +14 pickle +10 pineNut +11 pineapple +20 pineappleJuice +296 pinto +43 plantain +15 plum +22 popcorn
+ +184 porkChop +190 porkRib +43 chip +100 mashedPotato +3 pretzel +64 pruneJuice +117 pudding +22 raisinBread
+ +140 raisin +4 rawWhite +86 eggYolk +19 rhubard +142 brownRice +2 rootBeer +44 ryeWafer +36 ryeSliced
+ +safflower +11 dressingBlue +dressingFrench +dressingItalian +3 dressingThousand +4 dressingMayo +269 salmonBroiled
+ +243 salmonCanned +12 saltineCracker +247 skimMilk +26 chocolateSnackCake +soyBean +85 spaghetti +27 spinach
+ +33 strawberry +tea +28 tomato +259 trout +199 tuna +181 turkey +196 veal +41 vegeJuice +14 chestnut
+ +47 wheatBread +15 wheatCracker +174 whiteRice +117 yellowCake +271 lowYogurt +216 wholeYogurt >= 400;
+Max Phosphorus: +17 appleJuice +50 applePie +10 rawApple +23 cannedApricot +55 rawAsparagus +73 rawAvocado +46 plainBagel
+ +33 bambooShoots +22 rawBanana +392 liverBeef +186 steakBeef +287 driedBeef +70 gravyBeef +43 lightBeer
+ +44 regularBeer +26 cookedBeet +30 rawBlackberry +208 blackeyedPea +15 rawBlueberry +141 crumbBread
+ +86 rawBroccoli +87 brusselSprout +274 beefBurrito +26 butter +219 butterMilk +138 bacon +45 cantaloupe
+ +46 cola +30 dietCola +62 carrotCake +77 carrotJuice +32 rawCarrot +22 cauliflower +10 celery +110 blueCheese
+ +146 cheddarCheese +30 creamCheese +126 montereyJackCheese +171 swissCheese +17 crackersCheese +155 goudaCheese
+ +105 mozzarellaCheese +13 cherry +273 roastedChicken +258 friedChicken +8 chilliPowder +41 cookiesChocolateChip
+ +138 rawClam +2 brewedCoffee +8 instantCoffee +38 coleSlaw +52 cornChips +79 C53 +303 cornDog +277 cottageCream
+ +195 sourCream +64 croissant +5 cucumber +310 bakedCustard +36 dandelionGreen +33 dates +449 roastedDuck
+ +278 eggNog +94 eggNoodle +35 cookedEggplant +198 enchilada +67 plainEnglishMuffin +380 englishWalnut
+ +116 fishstick +39 beefAndPorkFrankfurter +71 turkeyFrankfurter +47 frenchFriesFried +43 frenchFriesBaked
+ +2 ginRumVodkaWhiskey +85 gingerBread +20 grahamCracker +14 grapeDrink +142 grapeNutCereal +134 leanGroundBeef
+ +144 regularGroundBeef +17 hamLuncheon +13 honeyDew +134 vanillaIceCream +129 vanillaIceMilk +319 kefir
+ +132 lambChops +162 lambRoasted +lard +19 lemon +38 lettuce +54 limaBeans +88 cereal +85 macSalad +22 mango
+ +26 margarine +23 marshmallow +10 melbaToast +232 twoMilk +228 wholeMilk +55 mixedToast +90 blueMuffin
+ +36 mushroom +22 nectarine +cornOil +oliveOil +peanutOil +46 onion +4 orange +42 orangeJuice +379 pacifcOyster
+ +343 eastOyster +55 peachPie +43 peachJuice +10 peach +60 peanutButter +18 pear +57 pea +3.67 pepper
+ +14 pickle +10 pineNut +11 pineapple +20 pineappleJuice +296 pinto +43 plantain +15 plum +22 popcorn
+ +184 porkChop +190 porkRib +43 chip +100 mashedPotato +3 pretzel +64 pruneJuice +117 pudding +22 raisinBread
+ +140 raisin +4 rawWhite +86 eggYolk +19 rhubard +142 brownRice +2 rootBeer +44 ryeWafer +36 ryeSliced
+ +safflower +11 dressingBlue +dressingFrench +dressingItalian +3 dressingThousand +4 dressingMayo +269 salmonBroiled
+ +243 salmonCanned +12 saltineCracker +247 skimMilk +26 chocolateSnackCake +soyBean +85 spaghetti +27 spinach
+ +33 strawberry +tea +28 tomato +259 trout +199 tuna +181 turkey +196 veal +41 vegeJuice +14 chestnut
+ +47 wheatBread +15 wheatCracker +174 whiteRice +117 yellowCake +271 lowYogurt +216 wholeYogurt <= 1000;
+Min Potassium: +295 appleJuice +10 applePie +159 rawApple +286 cannedApricot +279 rawAsparagus +1097 rawAvocado +50 plainBagel
+ +105 bambooShoots +451 rawBanana +309 liverBeef +306 steakBeef +142 driedBeef +189 gravyBeef +64 lightBeer
+ +89 regularBeer +266 cookedBeet +282 rawBlackberry +638 blackeyedPea +129 rawBlueberry +152 crumbBread
+ +293 rawBroccoli +491 brusselSprout +388 beefBurrito +29 butter +371 butterMilk +181 bacon +825 cantaloupe
+ +4 cola +108 carrotCake +538 carrotJuice +233 rawCarrot +200 cauliflower +114 celery +73 blueCheese
+ +28 cheddarCheese +34 creamCheese +23 montereyJackCheese +31 swissCheese +17 crackersCheese +34 goudaCheese
+ +19 mozzarellaCheese +152 cherry +340 roastedChicken +282 friedChicken +50 chilliPowder +56 cookiesChocolateChip
+ +154 rawClam +130 brewedCoffee +87 instantCoffee +218 coleSlaw +52 cornChips +192 C53 +164 cornDog +177 cottageCream
+ +331 sourCream +68 croissant +42 cucumber +387 bakedCustard +218 dandelionGreen +541 dates +557 roastedDuck
+ +420 eggNog +70 eggNoodle +397 cookedEggplant +653 enchilada +331 plainEnglishMuffin +602 englishWalnut
+ +188 fishstick +75 beefAndPorkFrankfurter +84 turkeyFrankfurter +366 frenchFriesFried +229 frenchFriesBaked
+ +ginRumVodkaWhiskey +260 gingerBread +36 grahamCracker +154 grapeDrink +190 grapeNutCereal +256 leanGroundBeef
+ +248 regularGroundBeef +45 hamLuncheon +350 honeyDew +257 vanillaIceCream +265 vanillaIceMilk +205 kefir
+ +195 lambChops +273 lambRoasted +148 lemon +419 lettuce +347 limaBeans +66 cereal +103 macSalad +323 mango
+ +48 margarine +91 marshmallow +11 melbaToast +377 twoMilk +370 wholeMilk +56 mixedToast +54 blueMuffin
+ +130 mushroom +288 nectarine +248 onion +9 orange +496 orangeJuice +290 pacifcOyster +290 eastOyster
+ +235 peachPie +317 peachJuice +171 peach +110 peanutButter +208 pear +147 pea +26.7 pepper +130 pickle
+ +178 pineNut +175 pineapple +335 pineappleJuice +882 pinto +716 plantain +147 plum +20 popcorn +312 porkChop
+ +313 porkRib +369 chip +628 mashedPotato +3 pretzel +707 pruneJuice +254 pudding +59 raisinBread +1089 raisin
+ +45 rawWhite +15 eggYolk +230 rhubard +137 brownRice +3 rootBeer +65 ryeWafer +51 ryeSliced +6 dressingBlue
+ +2 dressingFrench +5 dressingItalian +18 dressingThousand +5 dressingMayo +305 salmonBroiled +307 salmonCanned
+ +17 saltineCracker +406 skimMilk +34 chocolateSnackCake +103 spaghetti +312 spinach +250 strawberry
+ +89 tea +255 tomato +297 trout +298 tuna +254 turkey +258 veal +467 vegeJuice +82 chestnut +35 wheatBread
+ +17 wheatCracker +170 whiteRice +123 yellowCake +442 lowYogurt +352 wholeYogurt >= 3000;
+Max Potassium: +295 appleJuice +10 applePie +159 rawApple +286 cannedApricot +279 rawAsparagus +1097 rawAvocado +50 plainBagel
+ +105 bambooShoots +451 rawBanana +309 liverBeef +306 steakBeef +142 driedBeef +189 gravyBeef +64 lightBeer
+ +89 regularBeer +266 cookedBeet +282 rawBlackberry +638 blackeyedPea +129 rawBlueberry +152 crumbBread
+ +293 rawBroccoli +491 brusselSprout +388 beefBurrito +29 butter +371 butterMilk +181 bacon +825 cantaloupe
+ +4 cola +108 carrotCake +538 carrotJuice +233 rawCarrot +200 cauliflower +114 celery +73 blueCheese
+ +28 cheddarCheese +34 creamCheese +23 montereyJackCheese +31 swissCheese +17 crackersCheese +34 goudaCheese
+ +19 mozzarellaCheese +152 cherry +340 roastedChicken +282 friedChicken +50 chilliPowder +56 cookiesChocolateChip
+ +154 rawClam +130 brewedCoffee +87 instantCoffee +218 coleSlaw +52 cornChips +192 C53 +164 cornDog +177 cottageCream
+ +331 sourCream +68 croissant +42 cucumber +387 bakedCustard +218 dandelionGreen +541 dates +557 roastedDuck
+ +420 eggNog +70 eggNoodle +397 cookedEggplant +653 enchilada +331 plainEnglishMuffin +602 englishWalnut
+ +188 fishstick +75 beefAndPorkFrankfurter +84 turkeyFrankfurter +366 frenchFriesFried +229 frenchFriesBaked
+ +ginRumVodkaWhiskey +260 gingerBread +36 grahamCracker +154 grapeDrink +190 grapeNutCereal +256 leanGroundBeef
+ +248 regularGroundBeef +45 hamLuncheon +350 honeyDew +257 vanillaIceCream +265 vanillaIceMilk +205 kefir
+ +195 lambChops +273 lambRoasted +148 lemon +419 lettuce +347 limaBeans +66 cereal +103 macSalad +323 mango
+ +48 margarine +91 marshmallow +11 melbaToast +377 twoMilk +370 wholeMilk +56 mixedToast +54 blueMuffin
+ +130 mushroom +288 nectarine +248 onion +9 orange +496 orangeJuice +290 pacifcOyster +290 eastOyster
+ +235 peachPie +317 peachJuice +171 peach +110 peanutButter +208 pear +147 pea +26.7 pepper +130 pickle
+ +178 pineNut +175 pineapple +335 pineappleJuice +882 pinto +716 plantain +147 plum +20 popcorn +312 porkChop
+ +313 porkRib +369 chip +628 mashedPotato +3 pretzel +707 pruneJuice +254 pudding +59 raisinBread +1089 raisin
+ +45 rawWhite +15 eggYolk +230 rhubard +137 brownRice +3 rootBeer +65 ryeWafer +51 ryeSliced +6 dressingBlue
+ +2 dressingFrench +5 dressingItalian +18 dressingThousand +5 dressingMayo +305 salmonBroiled +307 salmonCanned
+ +17 saltineCracker +406 skimMilk +34 chocolateSnackCake +103 spaghetti +312 spinach +250 strawberry
+ +89 tea +255 tomato +297 trout +298 tuna +254 turkey +258 veal +467 vegeJuice +82 chestnut +35 wheatBread
+ +17 wheatCracker +170 whiteRice +123 yellowCake +442 lowYogurt +352 wholeYogurt <= 5000;
+Min Zinc: +0.1 appleJuice +0.3 applePie +0.2 cannedApricot +0.4 rawAsparagus +0.7 rawAvocado +0.3 plainBagel +0.3 bambooShoots
+ +0.2 rawBanana +4.3 liverBeef +4.9 steakBeef +4.1 driedBeef +2.3 gravyBeef +0.1 lightBeer +0.1 regularBeer
+ +0.2 cookedBeet +0.4 rawBlackberry +2.4 blackeyedPea +0.2 rawBlueberry +0.5 crumbBread +0.3 rawBroccoli
+ +0.5 brusselSprout +3.3 beefBurrito +0.1 butter +butterMilk +0.8 bacon +0.4 cantaloupe +0.3 dietCola
+ +0.5 carrotCake +0.3 carrotJuice +0.1 rawCarrot +0.1 cauliflower +0.1 celery +0.8 blueCheese +0.9 cheddarCheese
+ +0.3 creamCheese +0.8 montereyJackCheese +1.1 swissCheese +0.1 crackersCheese +1.1 goudaCheese +0.7 mozzarellaCheese
+ +2.9 roastedChicken +1.3 friedChicken +0.1 chilliPowder +0.3 cookiesChocolateChip +1.4 rawClam +0.1 instantCoffee
+ +0.2 coleSlaw +0.4 cornChips +0.4 C53 +1.4 cornDog +0.8 cottageCream +0.7 sourCream +0.3 croissant +0.1 cucumber
+ +1.5 bakedCustard +0.6 dandelionGreen +0.2 dates +5.8 roastedDuck +1.2 eggNog +0.2 eggNoodle +0.2 cookedEggplant
+ +1.2 enchilada +0.4 plainEnglishMuffin +3.3 englishWalnut +0.5 fishstick +0.8 beefAndPorkFrankfurter
+ +turkeyFrankfurter +0.2 frenchFriesFried +0.2 frenchFriesBaked +0.9 gingerBread +0.1 grahamCracker +0.1 grapeDrink
+ +1.2 grapeNutCereal +3.7 leanGroundBeef +3.9 regularGroundBeef +0.3 hamLuncheon +0.1 honeyDew +1.4 vanillaIceCream
+ +0.6 vanillaIceMilk +0.9 kefir +2.9 lambChops +3.8 lambRoasted +0.2 lemon +0.4 lettuce +0.4 limaBeans
+ +0.6 cereal +0.6 macSalad +0.1 mango +0.2 margarine +0.4 melbaToast +twoMilk +0.9 wholeMilk +0.2 blueMuffin
+ +0.3 mushroom +0.1 nectarine +0.1 cornOil +0.3 onion +0.4 orange +0.1 orangeJuice +74.4 pacifcOyster
+ +96.7 eastOyster +0.3 peachPie +0.3 peachJuice +0.1 peach +0.5 peanutButter +0.2 pear +0.6 pea +0.2 pickle
+ +1.2 pineNut +0.1 pineapple +0.3 pineappleJuice +2.4 pinto +0.2 plantain +0.1 plum +0.2 popcorn +1.7 porkChop
+ +1.7 porkRib +0.3 chip +0.6 mashedPotato +0.5 pruneJuice +0.7 pudding +0.1 raisinBread +0.5 raisin +0.1 rawWhite
+ +0.5 eggYolk +0.2 rhubard +brownRice +0.3 rootBeer +1.6 ryeWafer +0.4 ryeSliced +0.1 safflower +0.3 dressingBlue
+ +0.9 salmonBroiled +0.8 salmonCanned +0.1 saltineCracker +0.9 skimMilk +0.2 chocolateSnackCake +0.1 soyBean
+ +0.6 spaghetti +0.3 spinach +0.1 strawberry +0.1 tomato +0.2 trout +0.9 tuna +2.6 turkey +3.5 veal +0.5 vegeJuice
+ +0.3 chestnut +0.3 wheatBread +0.2 wheatCracker +2.4 whiteRice +0.2 yellowCake +1.7 lowYogurt +1.3 wholeYogurt >= 8;
+Max Zinc: +0.1 appleJuice +0.3 applePie +0.2 cannedApricot +0.4 rawAsparagus +0.7 rawAvocado +0.3 plainBagel +0.3 bambooShoots
+ +0.2 rawBanana +4.3 liverBeef +4.9 steakBeef +4.1 driedBeef +2.3 gravyBeef +0.1 lightBeer +0.1 regularBeer
+ +0.2 cookedBeet +0.4 rawBlackberry +2.4 blackeyedPea +0.2 rawBlueberry +0.5 crumbBread +0.3 rawBroccoli
+ +0.5 brusselSprout +3.3 beefBurrito +0.1 butter +butterMilk +0.8 bacon +0.4 cantaloupe +0.3 dietCola
+ +0.5 carrotCake +0.3 carrotJuice +0.1 rawCarrot +0.1 cauliflower +0.1 celery +0.8 blueCheese +0.9 cheddarCheese
+ +0.3 creamCheese +0.8 montereyJackCheese +1.1 swissCheese +0.1 crackersCheese +1.1 goudaCheese +0.7 mozzarellaCheese
+ +2.9 roastedChicken +1.3 friedChicken +0.1 chilliPowder +0.3 cookiesChocolateChip +1.4 rawClam +0.1 instantCoffee
+ +0.2 coleSlaw +0.4 cornChips +0.4 C53 +1.4 cornDog +0.8 cottageCream +0.7 sourCream +0.3 croissant +0.1 cucumber
+ +1.5 bakedCustard +0.6 dandelionGreen +0.2 dates +5.8 roastedDuck +1.2 eggNog +0.2 eggNoodle +0.2 cookedEggplant
+ +1.2 enchilada +0.4 plainEnglishMuffin +3.3 englishWalnut +0.5 fishstick +0.8 beefAndPorkFrankfurter
+ +turkeyFrankfurter +0.2 frenchFriesFried +0.2 frenchFriesBaked +0.9 gingerBread +0.1 grahamCracker +0.1 grapeDrink
+ +1.2 grapeNutCereal +3.7 leanGroundBeef +3.9 regularGroundBeef +0.3 hamLuncheon +0.1 honeyDew +1.4 vanillaIceCream
+ +0.6 vanillaIceMilk +0.9 kefir +2.9 lambChops +3.8 lambRoasted +0.2 lemon +0.4 lettuce +0.4 limaBeans
+ +0.6 cereal +0.6 macSalad +0.1 mango +0.2 margarine +0.4 melbaToast +twoMilk +0.9 wholeMilk +0.2 blueMuffin
+ +0.3 mushroom +0.1 nectarine +0.1 cornOil +0.3 onion +0.4 orange +0.1 orangeJuice +74.4 pacifcOyster
+ +96.7 eastOyster +0.3 peachPie +0.3 peachJuice +0.1 peach +0.5 peanutButter +0.2 pear +0.6 pea +0.2 pickle
+ +1.2 pineNut +0.1 pineapple +0.3 pineappleJuice +2.4 pinto +0.2 plantain +0.1 plum +0.2 popcorn +1.7 porkChop
+ +1.7 porkRib +0.3 chip +0.6 mashedPotato +0.5 pruneJuice +0.7 pudding +0.1 raisinBread +0.5 raisin +0.1 rawWhite
+ +0.5 eggYolk +0.2 rhubard +brownRice +0.3 rootBeer +1.6 ryeWafer +0.4 ryeSliced +0.1 safflower +0.3 dressingBlue
+ +0.9 salmonBroiled +0.8 salmonCanned +0.1 saltineCracker +0.9 skimMilk +0.2 chocolateSnackCake +0.1 soyBean
+ +0.6 spaghetti +0.3 spinach +0.1 strawberry +0.1 tomato +0.2 trout +0.9 tuna +2.6 turkey +3.5 veal +0.5 vegeJuice
+ +0.3 chestnut +0.3 wheatBread +0.2 wheatCracker +2.4 whiteRice +0.2 yellowCake +1.7 lowYogurt +1.3 wholeYogurt <= 16;
+Min Niacin: +0.25 appleJuice +1.59 applePie +0.11 rawApple +0.65 cannedApricot +0.95 rawAsparagus +3.32 rawAvocado
+ +2.4 plainBagel +0.18 bambooShoots +0.62 rawBanana +12.3 liverBeef +3.3 steakBeef +2.7 driedBeef +1.54 gravyBeef
+ +0.01 lightBeer +1.61 regularBeer +0.23 cookedBeet +0.58 rawBlackberry +1.24 blackeyedPea +0.7 rawBlueberry
+ +4.8 crumbBread +1.36 rawBroccoli +0.95 brusselSprout +4.36 beefBurrito +0.05 butter +0.14 butterMilk
+ +3.22 bacon +1.53 cantaloupe +0.9 carrotCake +0.71 carrotJuice +0.67 rawCarrot +0.34 cauliflower +0.12 celery
+ +0.29 blueCheese +0.02 cheddarCheese +0.03 creamCheese +0.02 montereyJackCheese +0.03 swissCheese +0.4 crackersCheese
+ +0.02 goudaCheese +0.02 mozzarellaCheese +0.3 cherry +12.8 roastedChicken +14.7 friedChicken +0.2 chilliPowder
+ +0.9 cookiesChocolateChip +1.1 rawClam +0.53 brewedCoffee +0.69 instantCoffee +0.33 coleSlaw +0.4 cornChips
+ +1.24 C53 +3.27 cornDog +0.27 cottageCream +0.15 sourCream +1.3 croissant +0.09 cucumber +0.3 bakedCustard
+ +0.39 dandelionGreen +1.83 dates +11.3 roastedDuck +0.27 eggNog +1.9 eggNoodle +0.96 cookedEggplant
+ +2.14 plainEnglishMuffin +1.25 englishWalnut +1.2 fishstick +1.18 beefAndPorkFrankfurter +1.77 turkeyFrankfurter
+ +1.63 frenchFriesFried +1.15 frenchFriesBaked +0.01 ginRumVodkaWhiskey +1.23 gingerBread +0.6 grahamCracker
+ +0.67 grapeDrink +10 grapeNutCereal +4.4 leanGroundBeef +4.9 regularGroundBeef +0.66 hamLuncheon +0.77 honeyDew
+ +0.14 vanillaIceCream +0.12 vanillaIceMilk +0.3 kefir +4.4 lambChops +5.5 lambRoasted +0.16 lemon +0.49 lettuce
+ +0.91 limaBeans +5.6 cereal +1.82 macSalad +1.21 mango +0.03 margarine +0.2 marshmallow +0.1 melbaToast
+ +0.21 twoMilk +0.2 wholeMilk +1.1 mixedToast +1.17 blueMuffin +1.44 mushroom +1.35 nectarine +0.16 onion
+ +0.99 orangeJuice +6 pacifcOyster +6 eastOyster +2.3 peachPie +1.44 peachJuice +0.86 peach +2.15 peanutButter
+ +0.17 pear +0.62 pea +0.02 pepper +0.01 pickle +1.24 pineNut +0.65 pineapple +0.64 pineappleJuice +0.7 pinto
+ +1.16 plantain +0.45 plum +0.2 popcorn +4.35 porkChop +4.17 porkRib +1.19 chip +2.35 mashedPotato +0.13 pretzel
+ +2.01 pruneJuice +0.6 pudding +1.02 raisinBread +1.19 raisin +0.03 rawWhite +0.01 eggYolk +0.48 rhubard
+ +2.73 brownRice +0.5 ryeWafer +0.83 ryeSliced +0.01 dressingBlue +0.03 dressingThousand +0.01 dressingMayo
+ +5.5 salmonBroiled +6.8 salmonCanned +0.6 saltineCracker +0.22 skimMilk +0.7 chocolateSnackCake +1.82 spaghetti
+ +0.41 spinach +1.2 strawberry +0.1 tea +0.74 tomato +2.3 trout +10.1 tuna +4.63 turkey +4.6 veal +1.76 vegeJuice
+ +0.25 chestnut +1.13 wheatBread +0.4 wheatCracker +6.48 whiteRice +0.62 yellowCake +0.22 lowYogurt +0.17 wholeYogurt >= 12;
+Max Niacin: +0.25 appleJuice +1.59 applePie +0.11 rawApple +0.65 cannedApricot +0.95 rawAsparagus +3.32 rawAvocado
+ +2.4 plainBagel +0.18 bambooShoots +0.62 rawBanana +12.3 liverBeef +3.3 steakBeef +2.7 driedBeef +1.54 gravyBeef
+ +0.01 lightBeer +1.61 regularBeer +0.23 cookedBeet +0.58 rawBlackberry +1.24 blackeyedPea +0.7 rawBlueberry
+ +4.8 crumbBread +1.36 rawBroccoli +0.95 brusselSprout +4.36 beefBurrito +0.05 butter +0.14 butterMilk
+ +3.22 bacon +1.53 cantaloupe +0.9 carrotCake +0.71 carrotJuice +0.67 rawCarrot +0.34 cauliflower +0.12 celery
+ +0.29 blueCheese +0.02 cheddarCheese +0.03 creamCheese +0.02 montereyJackCheese +0.03 swissCheese +0.4 crackersCheese
+ +0.02 goudaCheese +0.02 mozzarellaCheese +0.3 cherry +12.8 roastedChicken +14.7 friedChicken +0.2 chilliPowder
+ +0.9 cookiesChocolateChip +1.1 rawClam +0.53 brewedCoffee +0.69 instantCoffee +0.33 coleSlaw +0.4 cornChips
+ +1.24 C53 +3.27 cornDog +0.27 cottageCream +0.15 sourCream +1.3 croissant +0.09 cucumber +0.3 bakedCustard
+ +0.39 dandelionGreen +1.83 dates +11.3 roastedDuck +0.27 eggNog +1.9 eggNoodle +0.96 cookedEggplant
+ +2.14 plainEnglishMuffin +1.25 englishWalnut +1.2 fishstick +1.18 beefAndPorkFrankfurter +1.77 turkeyFrankfurter
+ +1.63 frenchFriesFried +1.15 frenchFriesBaked +0.01 ginRumVodkaWhiskey +1.23 gingerBread +0.6 grahamCracker
+ +0.67 grapeDrink +10 grapeNutCereal +4.4 leanGroundBeef +4.9 regularGroundBeef +0.66 hamLuncheon +0.77 honeyDew
+ +0.14 vanillaIceCream +0.12 vanillaIceMilk +0.3 kefir +4.4 lambChops +5.5 lambRoasted +0.16 lemon +0.49 lettuce
+ +0.91 limaBeans +5.6 cereal +1.82 macSalad +1.21 mango +0.03 margarine +0.2 marshmallow +0.1 melbaToast
+ +0.21 twoMilk +0.2 wholeMilk +1.1 mixedToast +1.17 blueMuffin +1.44 mushroom +1.35 nectarine +0.16 onion
+ +0.99 orangeJuice +6 pacifcOyster +6 eastOyster +2.3 peachPie +1.44 peachJuice +0.86 peach +2.15 peanutButter
+ +0.17 pear +0.62 pea +0.02 pepper +0.01 pickle +1.24 pineNut +0.65 pineapple +0.64 pineappleJuice +0.7 pinto
+ +1.16 plantain +0.45 plum +0.2 popcorn +4.35 porkChop +4.17 porkRib +1.19 chip +2.35 mashedPotato +0.13 pretzel
+ +2.01 pruneJuice +0.6 pudding +1.02 raisinBread +1.19 raisin +0.03 rawWhite +0.01 eggYolk +0.48 rhubard
+ +2.73 brownRice +0.5 ryeWafer +0.83 ryeSliced +0.01 dressingBlue +0.03 dressingThousand +0.01 dressingMayo
+ +5.5 salmonBroiled +6.8 salmonCanned +0.6 saltineCracker +0.22 skimMilk +0.7 chocolateSnackCake +1.82 spaghetti
+ +0.41 spinach +1.2 strawberry +0.1 tea +0.74 tomato +2.3 trout +10.1 tuna +4.63 turkey +4.6 veal +1.76 vegeJuice
+ +0.25 chestnut +1.13 wheatBread +0.4 wheatCracker +6.48 whiteRice +0.62 yellowCake +0.22 lowYogurt +0.17 wholeYogurt <= 20;
+Min Thiamine: +0.05 appleJuice +0.17 applePie +0.02 rawApple +0.02 cannedApricot +0.09 rawAsparagus +0.19 rawAvocado
+ +0.26 plainBagel +0.03 bambooShoots +0.05 rawBanana +0.18 liverBeef +0.1 steakBeef +0.05 driedBeef +0.07 gravyBeef
+ +0.01 lightBeer +0.02 regularBeer +0.03 cookedBeet +0.04 rawBlackberry +0.42 blackeyedPea +0.07 rawBlueberry
+ +0.35 crumbBread +0.15 rawBroccoli +0.17 brusselSprout +0.26 beefBurrito +0.01 butter +0.08 butterMilk
+ +0.38 bacon +0.1 cantaloupe +0.02 dietCola +0.11 carrotCake +0.17 carrotJuice +0.07 rawCarrot +0.04 cauliflower
+ +0.01 celery +0.01 blueCheese +0.01 cheddarCheese +0.01 creamCheese +0.01 montereyJackCheese +0.01 swissCheese
+ +0.05 crackersCheese +0.01 goudaCheese +0.01 mozzarellaCheese +0.03 cherry +0.1 roastedChicken +0.16 friedChicken
+ +0.01 chilliPowder +0.1 cookiesChocolateChip +0.09 rawClam +0.08 coleSlaw +0.04 cornChips +0.17 C53
+ +0.28 cornDog +0.04 cottageCream +0.08 sourCream +0.17 croissant +0.01 cucumber +0.11 bakedCustard +0.1 dandelionGreen
+ +0.07 dates +0.57 roastedDuck +0.09 eggNog +0.22 eggNoodle +0.12 cookedEggplant +0.18 enchilada +0.26 plainEnglishMuffin
+ +0.46 englishWalnut +0.06 fishstick +0.09 beefAndPorkFrankfurter +0.11 turkeyFrankfurter +0.09 frenchFriesFried
+ +0.06 frenchFriesBaked +0.01 ginRumVodkaWhiskey +0.14 gingerBread +0.02 grahamCracker +0.07 grapeDrink
+ +0.8 grapeNutCereal +0.04 leanGroundBeef +0.03 regularGroundBeef +0.08 hamLuncheon +0.1 honeyDew +0.05 vanillaIceCream
+ +0.08 vanillaIceMilk +0.45 kefir +0.04 lambChops +0.09 lambRoasted +0.06 lemon +0.1 lettuce +0.06 limaBeans
+ +0.4 cereal +0.23 macSalad +0.12 mango +0.01 margarine +0.01 marshmallow +0.01 melbaToast +0.1 twoMilk
+ +0.09 wholeMilk +0.08 mixedToast +0.11 blueMuffin +0.04 mushroom +0.02 nectarine +0.1 onion +0.22 orangeJuice
+ +0.29 pacifcOyster +0.34 eastOyster +0.17 peachPie +0.02 peachJuice +0.01 peach +0.02 peanutButter +0.03 pear
+ +0.1 pea +0.01 pepper +0.01 pickle +0.35 pineNut +0.14 pineapple +0.14 pineappleJuice +0.33 pinto +0.07 plantain
+ +0.02 plum +0.03 popcorn +0.87 porkChop +0.5 porkRib +0.04 chip +0.18 mashedPotato +0.01 pretzel +0.04 pruneJuice
+ +0.04 pudding +0.08 raisinBread +0.23 raisin +0.01 rawWhite +0.04 eggYolk +0.04 rhubard +0.18 brownRice
+ +0.06 ryeWafer +0.1 ryeSliced +0.01 dressingBlue +0.01 dressingThousand +0.01 dressingMayo +0.18 salmonBroiled
+ +0.03 salmonCanned +0.06 saltineCracker +0.09 skimMilk +0.06 chocolateSnackCake +0.23 spaghetti +0.04 spinach
+ +0.04 strawberry +0.07 tomato +0.07 trout +0.04 tuna +0.05 turkey +0.06 veal +0.1 vegeJuice +0.01 chestnut
+ +0.12 wheatBread +0.04 wheatCracker +0.81 whiteRice +0.05 yellowCake +0.08 lowYogurt +0.07 wholeYogurt >= 1;
+Max Thiamine: +0.05 appleJuice +0.17 applePie +0.02 rawApple +0.02 cannedApricot +0.09 rawAsparagus +0.19 rawAvocado
+ +0.26 plainBagel +0.03 bambooShoots +0.05 rawBanana +0.18 liverBeef +0.1 steakBeef +0.05 driedBeef +0.07 gravyBeef
+ +0.01 lightBeer +0.02 regularBeer +0.03 cookedBeet +0.04 rawBlackberry +0.42 blackeyedPea +0.07 rawBlueberry
+ +0.35 crumbBread +0.15 rawBroccoli +0.17 brusselSprout +0.26 beefBurrito +0.01 butter +0.08 butterMilk
+ +0.38 bacon +0.1 cantaloupe +0.02 dietCola +0.11 carrotCake +0.17 carrotJuice +0.07 rawCarrot +0.04 cauliflower
+ +0.01 celery +0.01 blueCheese +0.01 cheddarCheese +0.01 creamCheese +0.01 montereyJackCheese +0.01 swissCheese
+ +0.05 crackersCheese +0.01 goudaCheese +0.01 mozzarellaCheese +0.03 cherry +0.1 roastedChicken +0.16 friedChicken
+ +0.01 chilliPowder +0.1 cookiesChocolateChip +0.09 rawClam +0.08 coleSlaw +0.04 cornChips +0.17 C53
+ +0.28 cornDog +0.04 cottageCream +0.08 sourCream +0.17 croissant +0.01 cucumber +0.11 bakedCustard +0.1 dandelionGreen
+ +0.07 dates +0.57 roastedDuck +0.09 eggNog +0.22 eggNoodle +0.12 cookedEggplant +0.18 enchilada +0.26 plainEnglishMuffin
+ +0.46 englishWalnut +0.06 fishstick +0.09 beefAndPorkFrankfurter +0.11 turkeyFrankfurter +0.09 frenchFriesFried
+ +0.06 frenchFriesBaked +0.01 ginRumVodkaWhiskey +0.14 gingerBread +0.02 grahamCracker +0.07 grapeDrink
+ +0.8 grapeNutCereal +0.04 leanGroundBeef +0.03 regularGroundBeef +0.08 hamLuncheon +0.1 honeyDew +0.05 vanillaIceCream
+ +0.08 vanillaIceMilk +0.45 kefir +0.04 lambChops +0.09 lambRoasted +0.06 lemon +0.1 lettuce +0.06 limaBeans
+ +0.4 cereal +0.23 macSalad +0.12 mango +0.01 margarine +0.01 marshmallow +0.01 melbaToast +0.1 twoMilk
+ +0.09 wholeMilk +0.08 mixedToast +0.11 blueMuffin +0.04 mushroom +0.02 nectarine +0.1 onion +0.22 orangeJuice
+ +0.29 pacifcOyster +0.34 eastOyster +0.17 peachPie +0.02 peachJuice +0.01 peach +0.02 peanutButter +0.03 pear
+ +0.1 pea +0.01 pepper +0.01 pickle +0.35 pineNut +0.14 pineapple +0.14 pineappleJuice +0.33 pinto +0.07 plantain
+ +0.02 plum +0.03 popcorn +0.87 porkChop +0.5 porkRib +0.04 chip +0.18 mashedPotato +0.01 pretzel +0.04 pruneJuice
+ +0.04 pudding +0.08 raisinBread +0.23 raisin +0.01 rawWhite +0.04 eggYolk +0.04 rhubard +0.18 brownRice
+ +0.06 ryeWafer +0.1 ryeSliced +0.01 dressingBlue +0.01 dressingThousand +0.01 dressingMayo +0.18 salmonBroiled
+ +0.03 salmonCanned +0.06 saltineCracker +0.09 skimMilk +0.06 chocolateSnackCake +0.23 spaghetti +0.04 spinach
+ +0.04 strawberry +0.07 tomato +0.07 trout +0.04 tuna +0.05 turkey +0.06 veal +0.1 vegeJuice +0.01 chestnut
+ +0.12 wheatBread +0.04 wheatCracker +0.81 whiteRice +0.05 yellowCake +0.08 lowYogurt +0.07 wholeYogurt <= 1.4;
+Min Riboflavin: +0.04 appleJuice +0.13 applePie +0.02 rawApple +0.04 cannedApricot +0.11 rawAsparagus +0.21 rawAvocado
+ +0.2 plainBagel +0.03 bambooShoots +0.11 rawBanana +3.52 liverBeef +0.23 steakBeef +0.23 driedBeef +0.08 gravyBeef
+ +0.01 lightBeer +0.09 regularBeer +0.01 cookedBeet +0.06 rawBlackberry +0.11 blackeyedPea +0.07 rawBlueberry
+ +0.35 crumbBread +0.37 rawBroccoli +0.12 brusselSprout +0.29 beefBurrito +0.04 butter +0.38 butterMilk
+ +0.09 bacon +0.06 cantaloupe +0.08 dietCola +0.12 carrotCake +0.1 carrotJuice +0.04 rawCarrot +0.04 cauliflower
+ +0.01 celery +0.11 blueCheese +0.11 cheddarCheese +0.06 creamCheese +0.11 montereyJackCheese +0.1 swissCheese
+ +0.04 crackersCheese +0.1 goudaCheese +0.07 mozzarellaCheese +0.04 cherry +0.25 roastedChicken +0.2 friedChicken
+ +0.02 chilliPowder +0.23 cookiesChocolateChip +0.15 rawClam +0.01 instantCoffee +0.07 coleSlaw +0.05 cornChips
+ +0.06 C53 +0.17 cornDog +0.34 cottageCream +0.34 sourCream +0.13 croissant +0.01 cucumber +0.5 bakedCustard
+ +0.14 dandelionGreen +0.08 dates +1.04 roastedDuck +0.48 eggNog +0.13 eggNoodle +0.03 cookedEggplant
+ +0.26 enchilada +0.18 plainEnglishMuffin +0.18 englishWalnut +0.1 fishstick +0.05 beefAndPorkFrankfurter
+ +0.12 turkeyFrankfurter +0.01 frenchFriesFried +0.01 frenchFriesBaked +0.01 ginRumVodkaWhiskey +0.17 gingerBread
+ +0.03 grahamCracker +0.04 grapeDrink +0.8 grapeNutCereal +0.18 leanGroundBeef +0.16 regularGroundBeef
+ +0.04 hamLuncheon +0.02 honeyDew +0.33 vanillaIceCream +0.35 vanillaIceMilk +0.44 kefir +0.16 lambChops
+ +0.25 lambRoasted +0.21 lemon +0.1 lettuce +0.05 limaBeans +0.5 cereal +0.13 macSalad +0.12 mango +0.04 margarine
+ +0.01 marshmallow +0.01 melbaToast +0.4 twoMilk +0.4 wholeMilk +0.1 mixedToast +0.13 blueMuffin +0.16 mushroom
+ +0.06 nectarine +0.02 onion +0.07 orangeJuice +0.43 pacifcOyster +0.43 eastOyster +0.15 peachPie +0.04 peachJuice
+ +0.04 peach +0.02 peanutButter +0.07 pear +0.07 pea +0.01 pepper +0.01 pickle +0.06 pineNut +0.06 pineapple
+ +0.06 pineappleJuice +0.16 pinto +0.08 plantain +0.06 plum +0.01 popcorn +0.24 porkChop +0.24 porkRib
+ +0.01 chip +0.08 mashedPotato +0.01 pretzel +0.18 pruneJuice +0.17 pudding +0.15 raisinBread +0.13 raisin
+ +0.09 rawWhite +0.07 eggYolk +0.06 rhubard +0.04 brownRice +0.03 ryeWafer +0.08 ryeSliced +0.02 dressingBlue
+ +0.01 dressingThousand +0.01 dressingMayo +0.14 salmonBroiled +0.15 salmonCanned +0.05 saltineCracker
+ +0.34 skimMilk +0.09 chocolateSnackCake +0.13 spaghetti +0.11 spinach +0.13 strawberry +0.03 tea +0.06 tomato
+ +0.07 trout +0.09 tuna +0.15 turkey +0.21 veal +0.07 vegeJuice +0.02 chestnut +0.08 wheatBread +0.03 wheatCracker
+ +0.06 whiteRice +0.14 yellowCake +0.4 lowYogurt +0.32 wholeYogurt >= 1.1;
+Max Riboflavin: +0.04 appleJuice +0.13 applePie +0.02 rawApple +0.04 cannedApricot +0.11 rawAsparagus +0.21 rawAvocado
+ +0.2 plainBagel +0.03 bambooShoots +0.11 rawBanana +3.52 liverBeef +0.23 steakBeef +0.23 driedBeef +0.08 gravyBeef
+ +0.01 lightBeer +0.09 regularBeer +0.01 cookedBeet +0.06 rawBlackberry +0.11 blackeyedPea +0.07 rawBlueberry
+ +0.35 crumbBread +0.37 rawBroccoli +0.12 brusselSprout +0.29 beefBurrito +0.04 butter +0.38 butterMilk
+ +0.09 bacon +0.06 cantaloupe +0.08 dietCola +0.12 carrotCake +0.1 carrotJuice +0.04 rawCarrot +0.04 cauliflower
+ +0.01 celery +0.11 blueCheese +0.11 cheddarCheese +0.06 creamCheese +0.11 montereyJackCheese +0.1 swissCheese
+ +0.04 crackersCheese +0.1 goudaCheese +0.07 mozzarellaCheese +0.04 cherry +0.25 roastedChicken +0.2 friedChicken
+ +0.02 chilliPowder +0.23 cookiesChocolateChip +0.15 rawClam +0.01 instantCoffee +0.07 coleSlaw +0.05 cornChips
+ +0.06 C53 +0.17 cornDog +0.34 cottageCream +0.34 sourCream +0.13 croissant +0.01 cucumber +0.5 bakedCustard
+ +0.14 dandelionGreen +0.08 dates +1.04 roastedDuck +0.48 eggNog +0.13 eggNoodle +0.03 cookedEggplant
+ +0.26 enchilada +0.18 plainEnglishMuffin +0.18 englishWalnut +0.1 fishstick +0.05 beefAndPorkFrankfurter
+ +0.12 turkeyFrankfurter +0.01 frenchFriesFried +0.01 frenchFriesBaked +0.01 ginRumVodkaWhiskey +0.17 gingerBread
+ +0.03 grahamCracker +0.04 grapeDrink +0.8 grapeNutCereal +0.18 leanGroundBeef +0.16 regularGroundBeef
+ +0.04 hamLuncheon +0.02 honeyDew +0.33 vanillaIceCream +0.35 vanillaIceMilk +0.44 kefir +0.16 lambChops
+ +0.25 lambRoasted +0.21 lemon +0.1 lettuce +0.05 limaBeans +0.5 cereal +0.13 macSalad +0.12 mango +0.04 margarine
+ +0.01 marshmallow +0.01 melbaToast +0.4 twoMilk +0.4 wholeMilk +0.1 mixedToast +0.13 blueMuffin +0.16 mushroom
+ +0.06 nectarine +0.02 onion +0.07 orangeJuice +0.43 pacifcOyster +0.43 eastOyster +0.15 peachPie +0.04 peachJuice
+ +0.04 peach +0.02 peanutButter +0.07 pear +0.07 pea +0.01 pepper +0.01 pickle +0.06 pineNut +0.06 pineapple
+ +0.06 pineappleJuice +0.16 pinto +0.08 plantain +0.06 plum +0.01 popcorn +0.24 porkChop +0.24 porkRib
+ +0.01 chip +0.08 mashedPotato +0.01 pretzel +0.18 pruneJuice +0.17 pudding +0.15 raisinBread +0.13 raisin
+ +0.09 rawWhite +0.07 eggYolk +0.06 rhubard +0.04 brownRice +0.03 ryeWafer +0.08 ryeSliced +0.02 dressingBlue
+ +0.01 dressingThousand +0.01 dressingMayo +0.14 salmonBroiled +0.15 salmonCanned +0.05 saltineCracker
+ +0.34 skimMilk +0.09 chocolateSnackCake +0.13 spaghetti +0.11 spinach +0.13 strawberry +0.03 tea +0.06 tomato
+ +0.07 trout +0.09 tuna +0.15 turkey +0.21 veal +0.07 vegeJuice +0.02 chestnut +0.08 wheatBread +0.03 wheatCracker
+ +0.06 whiteRice +0.14 yellowCake +0.4 lowYogurt +0.32 wholeYogurt <= 1.5;
+Min Vitamin B6: +0.07 appleJuice +0.09 applePie +0.07 rawApple +0.16 cannedApricot +0.13 rawAsparagus +0.48 rawAvocado
+ +0.03 plainBagel +0.66 rawBanana +0.31 liverBeef +0.29 steakBeef +0.14 driedBeef +0.02 gravyBeef +0.12 lightBeer
+ +0.18 regularBeer +0.03 cookedBeet +0.08 rawBlackberry +0.16 blackeyedPea +0.05 rawBlueberry +0.02 crumbBread
+ +0.36 rawBroccoli +0.31 brusselSprout +0.73 beefBurrito +0.01 butter +0.08 butterMilk +0.21 bacon +0.31 cantaloupe
+ +0.86 carrotCake +0.4 carrotJuice +0.11 rawCarrot +0.12 cauliflower +0.01 celery +0.05 blueCheese +0.02 cheddarCheese
+ +0.01 creamCheese +0.02 montereyJackCheese +0.02 swissCheese +0.01 crackersCheese +0.02 goudaCheese
+ +0.02 mozzarellaCheese +0.02 cherry +0.65 roastedChicken +0.6 friedChicken +0.02 cookiesChocolateChip
+ +0.07 rawClam +0.17 coleSlaw +0.04 cornChips +0.18 C53 +0.11 cornDog +0.14 cottageCream +0.04 sourCream
+ +0.03 croissant +0.01 cucumber +0.13 bakedCustard +0.04 dandelionGreen +0.16 dates +0.55 roastedDuck
+ +0.13 eggNog +0.01 eggNoodle +0.14 cookedEggplant +0.25 enchilada +0.02 plainEnglishMuffin +0.67 englishWalnut
+ +0.12 fishstick +0.06 beefAndPorkFrankfurter +0.09 turkeyFrankfurter +0.12 frenchFriesFried +0.12 frenchFriesBaked
+ +0.01 gingerBread +0.01 grahamCracker +0.1 grapeDrink +grapeNutCereal +0.39 leanGroundBeef +0.39 regularGroundBeef
+ +0.04 hamLuncheon +0.08 honeyDew +0.06 vanillaIceCream +0.09 vanillaIceMilk +0.09 kefir +0.11 lambChops
+ +0.17 lambRoasted +0.06 lemon +0.11 lettuce +0.1 limaBeans +0.6 cereal +0.1 macSalad +0.28 mango +0.01 margarine
+ +0.01 marshmallow +0.01 melbaToast +0.1 twoMilk +0.1 wholeMilk +0.02 mixedToast +0.01 blueMuffin +0.03 mushroom
+ +0.03 nectarine +0.25 onion +0.1 orangeJuice +0.13 pacifcOyster +0.13 eastOyster +0.07 peachPie +0.05 peachJuice
+ +0.02 peach +0.06 peanutButter +0.03 pear +0.05 pea +0.01 pickle +0.08 pineNut +0.14 pineapple +0.33 pinto
+ +0.37 plantain +0.04 plum +0.02 popcorn +0.35 porkChop +0.3 porkRib +0.14 chip +0.49 mashedPotato +0.01 pretzel
+ +0.56 pruneJuice +0.03 pudding +0.01 raisinBread +0.36 raisin +0.01 rawWhite +0.05 eggYolk +0.05 rhubard
+ +0.29 brownRice +0.03 ryeWafer +0.02 ryeSliced +0.01 dressingBlue +0.01 dressingFrench +0.03 dressingItalian
+ +0.01 dressingThousand +0.01 dressingMayo +0.68 salmonBroiled +0.38 salmonCanned +0.01 saltineCracker
+ +0.1 skimMilk +0.01 chocolateSnackCake +0.1 spaghetti +0.11 spinach +0.08 strawberry +0.09 tomato +0.41 trout
+ +0.47 tuna +0.39 turkey +0.27 veal +0.34 vegeJuice +0.03 wheatBread +0.01 wheatCracker +0.3 whiteRice
+ +0.03 yellowCake +0.09 lowYogurt +0.07 wholeYogurt >= 1;
+Max Vitamin B6: +0.07 appleJuice +0.09 applePie +0.07 rawApple +0.16 cannedApricot +0.13 rawAsparagus +0.48 rawAvocado
+ +0.03 plainBagel +0.66 rawBanana +0.31 liverBeef +0.29 steakBeef +0.14 driedBeef +0.02 gravyBeef +0.12 lightBeer
+ +0.18 regularBeer +0.03 cookedBeet +0.08 rawBlackberry +0.16 blackeyedPea +0.05 rawBlueberry +0.02 crumbBread
+ +0.36 rawBroccoli +0.31 brusselSprout +0.73 beefBurrito +0.01 butter +0.08 butterMilk +0.21 bacon +0.31 cantaloupe
+ +0.86 carrotCake +0.4 carrotJuice +0.11 rawCarrot +0.12 cauliflower +0.01 celery +0.05 blueCheese +0.02 cheddarCheese
+ +0.01 creamCheese +0.02 montereyJackCheese +0.02 swissCheese +0.01 crackersCheese +0.02 goudaCheese
+ +0.02 mozzarellaCheese +0.02 cherry +0.65 roastedChicken +0.6 friedChicken +0.02 cookiesChocolateChip
+ +0.07 rawClam +0.17 coleSlaw +0.04 cornChips +0.18 C53 +0.11 cornDog +0.14 cottageCream +0.04 sourCream
+ +0.03 croissant +0.01 cucumber +0.13 bakedCustard +0.04 dandelionGreen +0.16 dates +0.55 roastedDuck
+ +0.13 eggNog +0.01 eggNoodle +0.14 cookedEggplant +0.25 enchilada +0.02 plainEnglishMuffin +0.67 englishWalnut
+ +0.12 fishstick +0.06 beefAndPorkFrankfurter +0.09 turkeyFrankfurter +0.12 frenchFriesFried +0.12 frenchFriesBaked
+ +0.01 gingerBread +0.01 grahamCracker +0.1 grapeDrink +grapeNutCereal +0.39 leanGroundBeef +0.39 regularGroundBeef
+ +0.04 hamLuncheon +0.08 honeyDew +0.06 vanillaIceCream +0.09 vanillaIceMilk +0.09 kefir +0.11 lambChops
+ +0.17 lambRoasted +0.06 lemon +0.11 lettuce +0.1 limaBeans +0.6 cereal +0.1 macSalad +0.28 mango +0.01 margarine
+ +0.01 marshmallow +0.01 melbaToast +0.1 twoMilk +0.1 wholeMilk +0.02 mixedToast +0.01 blueMuffin +0.03 mushroom
+ +0.03 nectarine +0.25 onion +0.1 orangeJuice +0.13 pacifcOyster +0.13 eastOyster +0.07 peachPie +0.05 peachJuice
+ +0.02 peach +0.06 peanutButter +0.03 pear +0.05 pea +0.01 pickle +0.08 pineNut +0.14 pineapple +0.33 pinto
+ +0.37 plantain +0.04 plum +0.02 popcorn +0.35 porkChop +0.3 porkRib +0.14 chip +0.49 mashedPotato +0.01 pretzel
+ +0.56 pruneJuice +0.03 pudding +0.01 raisinBread +0.36 raisin +0.01 rawWhite +0.05 eggYolk +0.05 rhubard
+ +0.29 brownRice +0.03 ryeWafer +0.02 ryeSliced +0.01 dressingBlue +0.01 dressingFrench +0.03 dressingItalian
+ +0.01 dressingThousand +0.01 dressingMayo +0.68 salmonBroiled +0.38 salmonCanned +0.01 saltineCracker
+ +0.1 skimMilk +0.01 chocolateSnackCake +0.1 spaghetti +0.11 spinach +0.08 strawberry +0.09 tomato +0.41 trout
+ +0.47 tuna +0.39 turkey +0.27 veal +0.34 vegeJuice +0.03 wheatBread +0.01 wheatCracker +0.3 whiteRice
+ +0.03 yellowCake +0.09 lowYogurt +0.07 wholeYogurt <= 1.5;
+Min Vitamin C: +2 appleJuice +8 rawApple +2 cannedApricot +25 rawAsparagus +14 rawAvocado +bambooShoots +10 rawBanana
+ +23 liverBeef +5 cookedBeet +30 rawBlackberry +4 blackeyedPea +20 rawBlueberry +113 rawBroccoli +97 brusselSprout
+ +5 beefBurrito +2 butterMilk +10 bacon +113 cantaloupe +carrotCake +11 carrotJuice +7 rawCarrot +34 cauliflower
+ +3 celery +5 cherry +2 chilliPowder +9 rawClam +39 coleSlaw +cornChips +5 C53 +3 cornDog +2 sourCream
+ +cucumber +bakedCustard +19 dandelionGreen +4 eggNog +2 cookedEggplant +4 englishWalnut +12 beefAndPorkFrankfurter
+ +5 frenchFriesFried +6 frenchFriesBaked +115 grapeDrink +32 honeyDew +vanillaIceCream +vanillaIceMilk
+ +6 kefir +39 lemon +13 lettuce +11 limaBeans +17 cereal +57 mango +2 twoMilk +2 wholeMilk +0.5 blueMuffin
+ +mushroom +7 nectarine +13 onion +124 orangeJuice +24 pacifcOyster +24 eastOyster +5 peachPie +9 peachJuice
+ +6 peach +7 pear +8 pea +4 pickle +pineNut +24 pineapple +27 pineappleJuice +17 plantain +3 plum +0.3 porkChop
+ +0.3 porkRib +12 chip +14 mashedPotato +11 pruneJuice +5 raisin +8 rhubard +2 skimMilk +16 spinach +106 strawberry
+ +22 tomato +trout +67 vegeJuice +0.9 chestnut +2 lowYogurt +wholeYogurt >= 65;
+Max Vitamin C: +2 appleJuice +8 rawApple +2 cannedApricot +25 rawAsparagus +14 rawAvocado +bambooShoots +10 rawBanana
+ +23 liverBeef +5 cookedBeet +30 rawBlackberry +4 blackeyedPea +20 rawBlueberry +113 rawBroccoli +97 brusselSprout
+ +5 beefBurrito +2 butterMilk +10 bacon +113 cantaloupe +carrotCake +11 carrotJuice +7 rawCarrot +34 cauliflower
+ +3 celery +5 cherry +2 chilliPowder +9 rawClam +39 coleSlaw +cornChips +5 C53 +3 cornDog +2 sourCream
+ +cucumber +bakedCustard +19 dandelionGreen +4 eggNog +2 cookedEggplant +4 englishWalnut +12 beefAndPorkFrankfurter
+ +5 frenchFriesFried +6 frenchFriesBaked +115 grapeDrink +32 honeyDew +vanillaIceCream +vanillaIceMilk
+ +6 kefir +39 lemon +13 lettuce +11 limaBeans +17 cereal +57 mango +2 twoMilk +2 wholeMilk +0.5 blueMuffin
+ +mushroom +7 nectarine +13 onion +124 orangeJuice +24 pacifcOyster +24 eastOyster +5 peachPie +9 peachJuice
+ +6 peach +7 pear +8 pea +4 pickle +pineNut +24 pineapple +27 pineappleJuice +17 plantain +3 plum +0.3 porkChop
+ +0.3 porkRib +12 chip +14 mashedPotato +11 pruneJuice +5 raisin +8 rhubard +2 skimMilk +16 spinach +106 strawberry
+ +22 tomato +trout +67 vegeJuice +0.9 chestnut +2 lowYogurt +wholeYogurt <= 150;
+Min Vitamin A: +29 applePie +7 rawApple +330 cannedApricot +75 rawAsparagus +106 rawAvocado +bambooShoots +9 rawBanana
+ +9120 liverBeef +cookedBeet +24 rawBlackberry +13 blackeyedPea +15 rawBlueberry +254 rawBroccoli +112 brusselSprout
+ +58 beefBurrito +852 butter +20 butterMilk +861 cantaloupe +15 carrotCake +3167 carrotJuice +2025 rawCarrot
+ +5 celery +65 blueCheese +86 cheddarCheese +124 creamCheese +81 montereyJackCheese +72 swissCheese +5 crackersCheese
+ +49 goudaCheese +68 mozzarellaCheese +15 cherry +22 roastedChicken +28 friedChicken +91 chilliPowder
+ +15 cookiesChocolateChip +26 rawClam +98 coleSlaw +11 cornChips +17 C53 +101 cottageCream +448 sourCream
+ +13 croissant +cucumber +146 bakedCustard +770 dandelionGreen +4 dates +51 roastedDuck +203 eggNog +34 eggNoodle
+ +10 cookedEggplant +352 enchilada +15 englishWalnut +10 fishstick +17 turkeyFrankfurter +9 grapeDrink
+ +753 grapeNutCereal +5 honeyDew +133 vanillaIceCream +53 vanillaIceMilk +155 kefir +21 lemon +158 lettuce
+ +16 limaBeans +424 cereal +806 mango +1122 margarine +140 twoMilk +76 wholeMilk +11 blueMuffin +100 nectarine
+ +50 orangeJuice +223 pacifcOyster +223 eastOyster +93 peachPie +94 peachJuice +47 peach +3 pear +65 pea
+ +7 pickle +pineNut +4 pineapple +pineappleJuice +pinto +140 plantain +96 plum +popcorn +3 porkChop +3 porkRib
+ +12 mashedPotato +31 pudding +raisin +94 eggYolk +17 rhubard +10 dressingBlue +3 dressingItalian +15 dressingThousand
+ +12 dressingMayo +87 salmonBroiled +18 salmonCanned +149 skimMilk +4 chocolateSnackCake +376 spinach
+ +6 strawberry +139 tomato +60 trout +20 tuna +283 vegeJuice +30 yellowCake +25 lowYogurt +68 wholeYogurt >= 700;
+Max Vitamin A: +29 applePie +7 rawApple +330 cannedApricot +75 rawAsparagus +106 rawAvocado +bambooShoots +9 rawBanana
+ +9120 liverBeef +cookedBeet +24 rawBlackberry +13 blackeyedPea +15 rawBlueberry +254 rawBroccoli +112 brusselSprout
+ +58 beefBurrito +852 butter +20 butterMilk +861 cantaloupe +15 carrotCake +3167 carrotJuice +2025 rawCarrot
+ +5 celery +65 blueCheese +86 cheddarCheese +124 creamCheese +81 montereyJackCheese +72 swissCheese +5 crackersCheese
+ +49 goudaCheese +68 mozzarellaCheese +15 cherry +22 roastedChicken +28 friedChicken +91 chilliPowder
+ +15 cookiesChocolateChip +26 rawClam +98 coleSlaw +11 cornChips +17 C53 +101 cottageCream +448 sourCream
+ +13 croissant +cucumber +146 bakedCustard +770 dandelionGreen +4 dates +51 roastedDuck +203 eggNog +34 eggNoodle
+ +10 cookedEggplant +352 enchilada +15 englishWalnut +10 fishstick +17 turkeyFrankfurter +9 grapeDrink
+ +753 grapeNutCereal +5 honeyDew +133 vanillaIceCream +53 vanillaIceMilk +155 kefir +21 lemon +158 lettuce
+ +16 limaBeans +424 cereal +806 mango +1122 margarine +140 twoMilk +76 wholeMilk +11 blueMuffin +100 nectarine
+ +50 orangeJuice +223 pacifcOyster +223 eastOyster +93 peachPie +94 peachJuice +47 peach +3 pear +65 pea
+ +7 pickle +pineNut +4 pineapple +pineappleJuice +pinto +140 plantain +96 plum +popcorn +3 porkChop +3 porkRib
+ +12 mashedPotato +31 pudding +raisin +94 eggYolk +17 rhubard +10 dressingBlue +3 dressingItalian +15 dressingThousand
+ +12 dressingMayo +87 salmonBroiled +18 salmonCanned +149 skimMilk +4 chocolateSnackCake +376 spinach
+ +6 strawberry +139 tomato +60 trout +20 tuna +283 vegeJuice +30 yellowCake +25 lowYogurt +68 wholeYogurt <= 1500;
+Min Fruits: +appleJuice +rawApple +cannedApricot +rawAvocado +rawBanana +rawBlackberry +rawBlueberry +cantaloupe
+ +cherry +dates +honeyDew +mango +nectarine +orangeJuice +peachJuice +peach +pear +pineapple +pineappleJuice
+ +plantain +plum +pruneJuice +raisin +rhubard +strawberry >= 1;
+Min Veggies and Legumes: +rawAsparagus +bambooShoots +cookedBeet +blackeyedPea +rawBroccoli +brusselSprout +carrotJuice +rawCarrot
+ +cauliflower +celery +C53 +cucumber +cookedEggplant +frenchFriesFried +frenchFriesBaked +lettuce +limaBeans
+ +mushroom +onion +pea +pinto +chip +mashedPotato +spinach +tomato +vegeJuice +chestnut >= 1;
+Min Meat: +liverBeef +steakBeef +driedBeef +bacon +leanGroundBeef +regularGroundBeef +hamLuncheon +lambChops +lambRoasted
+ +porkChop +porkRib +veal >= 1;
+Min Beverage: +lightBeer +regularBeer +cola +dietCola +brewedCoffee +instantCoffee +ginRumVodkaWhiskey +grapeDrink
+ +lemon +orange +rootBeer +tea >= 1;
+Min Fats and Oils: +butter +lard +margarine +cornOil +oliveOil +peanutOil +safflower +dressingBlue +dressingFrench +dressingItalian
+ +dressingThousand +dressingMayo +soyBean >= 1;
+Min Dairy: +butterMilk +blueCheese +cheddarCheese +creamCheese +montereyJackCheese +swissCheese +goudaCheese +mozzarellaCheese
+ +cottageCream +sourCream +bakedCustard +eggNog +vanillaIceCream +vanillaIceMilk +kefir +twoMilk +wholeMilk
+ +pudding +skimMilk +lowYogurt +wholeYogurt >= 1;
+
+/* Variable bounds */
+appleJuice <= 5;
+applePie <= 5;
+rawApple <= 5;
+cannedApricot <= 5;
+rawAsparagus <= 5;
+rawAvocado <= 5;
+plainBagel <= 5;
+bambooShoots <= 5;
+rawBanana <= 5;
+liverBeef <= 5;
+steakBeef <= 5;
+driedBeef <= 5;
+gravyBeef <= 5;
+lightBeer <= 5;
+regularBeer <= 5;
+cookedBeet <= 5;
+rawBlackberry <= 5;
+blackeyedPea <= 5;
+rawBlueberry <= 5;
+crumbBread <= 5;
+rawBroccoli <= 5;
+brusselSprout <= 5;
+beefBurrito <= 5;
+butter <= 5;
+butterMilk <= 5;
+bacon <= 5;
+cantaloupe <= 5;
+cola <= 5;
+dietCola <= 5;
+carrotCake <= 5;
+carrotJuice <= 5;
+rawCarrot <= 5;
+cauliflower <= 5;
+celery <= 5;
+blueCheese <= 5;
+cheddarCheese <= 5;
+creamCheese <= 5;
+montereyJackCheese <= 5;
+swissCheese <= 5;
+crackersCheese <= 5;
+goudaCheese <= 5;
+mozzarellaCheese <= 5;
+cherry <= 5;
+roastedChicken <= 5;
+friedChicken <= 5;
+chilliPowder <= 5;
+cookiesChocolateChip <= 5;
+rawClam <= 5;
+brewedCoffee <= 5;
+instantCoffee <= 5;
+coleSlaw <= 5;
+cornChips <= 5;
+C53 <= 5;
+cornDog <= 5;
+cottageCream <= 5;
+sourCream <= 5;
+croissant <= 5;
+cucumber <= 5;
+bakedCustard <= 5;
+dandelionGreen <= 5;
+dates <= 5;
+roastedDuck <= 5;
+eggNog <= 5;
+eggNoodle <= 5;
+cookedEggplant <= 5;
+enchilada <= 5;
+plainEnglishMuffin <= 5;
+englishWalnut <= 5;
+fishstick <= 5;
+beefAndPorkFrankfurter <= 5;
+turkeyFrankfurter <= 5;
+frenchFriesFried <= 5;
+frenchFriesBaked <= 5;
+ginRumVodkaWhiskey <= 5;
+gingerBread <= 5;
+grahamCracker <= 5;
+grapeDrink <= 5;
+grapeNutCereal <= 5;
+leanGroundBeef <= 5;
+regularGroundBeef <= 5;
+hamLuncheon <= 5;
+honeyDew <= 5;
+vanillaIceCream <= 5;
+vanillaIceMilk <= 5;
+kefir <= 5;
+lambChops <= 5;
+lambRoasted <= 5;
+lard <= 5;
+lemon <= 5;
+lettuce <= 5;
+limaBeans <= 5;
+cereal <= 5;
+macSalad <= 5;
+mango <= 5;
+margarine <= 5;
+marshmallow <= 5;
+melbaToast <= 5;
+twoMilk <= 5;
+wholeMilk <= 5;
+mixedToast <= 5;
+blueMuffin <= 5;
+mushroom <= 5;
+nectarine <= 5;
+cornOil <= 5;
+oliveOil <= 5;
+peanutOil <= 5;
+onion <= 5;
+orange <= 5;
+orangeJuice <= 5;
+pacifcOyster <= 5;
+eastOyster <= 5;
+peachPie <= 5;
+peachJuice <= 5;
+peach <= 5;
+peanutButter <= 5;
+pear <= 5;
+pea <= 5;
+pepper <= 5;
+pickle <= 5;
+pineNut <= 5;
+pineapple <= 5;
+pineappleJuice <= 5;
+pinto <= 5;
+plantain <= 5;
+plum <= 5;
+popcorn <= 5;
+porkChop <= 5;
+porkRib <= 5;
+chip <= 5;
+mashedPotato <= 5;
+pretzel <= 5;
+pruneJuice <= 5;
+pudding <= 5;
+raisinBread <= 5;
+raisin <= 5;
+rawWhite <= 5;
+eggYolk <= 5;
+rhubard <= 5;
+brownRice <= 5;
+rootBeer <= 5;
+ryeWafer <= 5;
+ryeSliced <= 5;
+safflower <= 5;
+dressingBlue <= 5;
+dressingFrench <= 5;
+dressingItalian <= 5;
+dressingThousand <= 5;
+dressingMayo <= 5;
+salmonBroiled <= 5;
+salmonCanned <= 5;
+saltineCracker <= 5;
+skimMilk <= 5;
+chocolateSnackCake <= 5;
+soyBean <= 5;
+spaghetti <= 5;
+spinach <= 5;
+strawberry <= 5;
+tea <= 5;
+tomato <= 5;
+trout <= 5;
+tuna <= 5;
+turkey <= 5;
+veal <= 5;
+vegeJuice <= 5;
+chestnut <= 5;
+wheatBread <= 5;
+wheatCracker <= 5;
+whiteRice <= 5;
+yellowCake <= 5;
+lowYogurt <= 5;
+wholeYogurt <= 5;
